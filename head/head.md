@@ -8,7 +8,7 @@ Metadata typically define the document title, character set, styles, scripts, an
 
 The following elements can go inside the `<head>` element:
 
-- [`<title>`](../title/title.md) (required in every HTML document)
+- [`<title>`](../title_tag/title.md) (required in every HTML document)
 - `<style>`
 - `<base>`
 - `<link>`
