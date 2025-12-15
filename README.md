@@ -11,3 +11,4 @@
 | [`<h1> - <h6>`](headings/headings.md) | Defines HTML headings |
 | [`<body>`](body/body.md) | Defines the document's body |
 | [`<br>`](br/br.md) | 	Defines a single line break |
+| [`<pre>`](pre/pre.md) | 	Defines preformatted text |
