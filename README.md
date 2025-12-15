@@ -14,3 +14,4 @@
 | [`<pre>`](pre/pre.md) | Defines preformatted text |
 | [`<head>`](head/head.md) | Contains metadata/information for the document |
 | [`<p>`](p/p.md) | Defines a paragraph |
+| [`<blockquote>`](blockquote/blockquote.md) | Defines a section that is quoted from another source |
