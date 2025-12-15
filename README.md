@@ -21,6 +21,7 @@
 | [`<big>`](big/big.md) | Defines big text |🔴|
 | [`<acronym>`](acronym/acronym.md) | Defines an acronym |🔴|
 | [`<abbr>`](abbr/abbr.md) | Defines an abbreviation or an acronym |🟢|
+| [`<title>`](title_tag/title.md) | Defines a title for the document |🟢|
 
 ## HTML Global Attributes
 
