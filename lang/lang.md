@@ -1,14 +1,4 @@
-# HTML Language Code Reference
-
-## ISO Language Codes
-
-You should always include the lang attribute inside the [`<html>`](../html/html.md) tag, to declare the language of the Web page. This is meant to assist search engines and browsers:
-
-```html
-<html lang="en">
-...
-</html>
-```
+# HTML `lang` Attribute
 
 The lang attribute specifies the language of the element's content.
 
@@ -27,7 +17,15 @@ Common examples are "en" for English, "es" for Spanish, "fr" for French, and so 
 </html>
 ```
 
-## ISO 639-1 Language Codes
+## ISO Language Codes
+
+You should always include the lang attribute inside the [`<html>`](../html/html.md) tag, to declare the language of the Web page. This is meant to assist search engines and browsers:
+
+```html
+<html lang="en">
+...
+</html>
+```
 
 ISO 639-1 defines abbreviations for languages:
 
