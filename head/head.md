@@ -1,0 +1,59 @@
+# HTML `<head>` Tag
+
+The `<head>` element is a container for metadata (data about data) and is placed between the [`<html>`](../html/html.md) tag and the [`<body>`](../body/body.md) tag.
+
+Metadata is data about the HTML document. Metadata is not displayed.
+
+Metadata typically define the document title, character set, styles, scripts, and other meta information.
+
+The following elements can go inside the `<head>` element:
+
+- `<title>` (required in every HTML document)
+- `<style>`
+- `<base>`
+- `<link>`
+- `<meta>`
+- `<script>`
+- `<noscript>`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required: The title of the document -->
+  <title>Example HTML Head</title>
+  <!-- Meta tags: character set, viewport, description -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is an example showing all elements inside the HTML head tag">
+  <!-- Base URL for relative links -->
+  <base href="https://www.example.com/">
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    h1 {
+      color: #333;
+    }
+  </style>
+  <!-- External JavaScript -->
+  <script src="script.js" defer></script>
+  <!-- Inline JavaScript -->
+  <script>
+    console.log('Hello from inline script!');
+  </script>
+  <!-- Fallback for browsers with JavaScript disabled -->
+  <noscript>
+    <p>JavaScript is disabled in your browser. Some features may not work.</p>
+  </noscript>
+</head>
+<body>
+  <h1>HTML Head Example</h1>
+  <p>This page demonstrates all elements inside the head section.</p>
+</body>
+</html>
+```
