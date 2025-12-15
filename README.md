@@ -16,3 +16,4 @@
 | [`<p>`](p/p.md) | Defines a paragraph |🟢|
 | [`<blockquote>`](blockquote/blockquote.md) | Defines a section that is quoted from another source |🟢|
 | [`<center>`](center/center.md) | Defines centered text |🔴|
+| [`<big>`](big/big.md) | Defines big text |🔴|
