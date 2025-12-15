@@ -22,6 +22,12 @@ The `<br>` tag is an empty tag which means that it has no end tag.
         Springfield, 12345<br>
         USA
     </p>
+    <pre>
+John Doe
+123 Main Street
+Springfield, 12345
+USA
+    </pre>
     <h2>Poem</h2>
     <p>
         Roses are red,<br>
@@ -29,6 +35,13 @@ The `<br>` tag is an empty tag which means that it has no end tag.
         Sugar is sweet,<br>
         And so are you.
     </p>
+    <pre>
+Roses are red,
+Violets are blue,
+Sugar is sweet,
+And so are you.
+    </pre>
+
 </body>
 </html>
 ```
