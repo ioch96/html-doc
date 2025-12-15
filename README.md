@@ -1,9 +1,11 @@
-# HTML Element Reference
+# HTML Documentation
+
+## HTML Element Reference
 
 ---
 
 | Tag | Description |Support|
-|---|---|:-:|
+|:-|:-|:-:|
 | [`<html>`](html/html.md) | Defines the root of an HTML document |🟢|
 | [`<!--...-->`](comment/comment.md) | Defines a comment |🟢|
 | [`<!DOCTYPE>`](doctype/doctype.md) | Defines the document type |🟢|
@@ -19,3 +21,19 @@
 | [`<big>`](big/big.md) | Defines big text |🔴|
 | [`<acronym>`](acronym/acronym.md) | Defines an acronym |🔴|
 | [`<abbr>`](abbr/abbr.md) | Defines an abbreviation or an acronym |🟢|
+
+## HTML Global Attributes
+
+The global attributes are attributes that can be used with all HTML elements.
+
+| Attribute | Description |Support|
+|:-|:-|:-:|
+| [`lang`](lang/lang.md) | Specifies the language of the element's content |🟢|
+
+## HTML Attribute Reference
+
+The table below lists all HTML attributes and what elements they can be used within:
+
+| Attribute | Belongs to | Description |Support|
+|:-|:-|:-|:-:|
+| [`title`](title/title.md) | Specifies extra information about an element |🟢|
