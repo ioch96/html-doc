@@ -2,7 +2,7 @@
 
 ## ISO Language Codes
 
-You should always include the lang attribute inside the `<html>` tag, to declare the language of the Web page. This is meant to assist search engines and browsers:
+You should always include the lang attribute inside the [`<html>`](../html/html.md) tag, to declare the language of the Web page. This is meant to assist search engines and browsers:
 
 ```html
 <html lang="en">
