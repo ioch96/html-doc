@@ -18,3 +18,4 @@
 | [`<center>`](center/center.md) | Defines centered text |🔴|
 | [`<big>`](big/big.md) | Defines big text |🔴|
 | [`<acronym>`](acronym/acronym.md) | Defines an acronym |🔴|
+| [`<abbr>`](abbr/abbr.md) | Defines an abbreviation or an acronym |🟢|
