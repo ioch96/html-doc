@@ -10,6 +10,23 @@ You should always include the lang attribute inside the [`<html>`](../html/html.
 </html>
 ```
 
+The lang attribute specifies the language of the element's content.
+
+Common examples are "en" for English, "es" for Spanish, "fr" for French, and so on.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Title of the document</title>
+</head>
+<body>
+	<p>This is a paragraph.</p>
+	<p lang="fr">Ceci est un paragraphe.</p>
+</body>
+</html>
+```
+
 ## ISO 639-1 Language Codes
 
 ISO 639-1 defines abbreviations for languages:
