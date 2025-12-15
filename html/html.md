@@ -2,7 +2,7 @@
 
 The `<html>` tag represents the root of an HTML document.
 
-The `<html>` tag is the container for all other HTML elements (except for the `<!DOCTYPE>` tag).
+The `<html>` tag is the container for all other HTML elements (except for the [`<!DOCTYPE>`](../doctype/doctype.md) tag).
 
 **Note**: You should always include the [lang](../lang/lang.md) attribute inside the `<html>` tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
 
