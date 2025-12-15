@@ -29,7 +29,7 @@ The global attributes are attributes that can be used with all HTML elements.
 | Attribute | Description |Support|
 |:-|:-|:-:|
 | [`lang`](lang/lang.md) | Specifies the language of the element's content |🟢|
-| [`title`](title/title.md) | Specifies extra information about an element |🟢|
+| [`title`](title_attribute/title.md) | Specifies extra information about an element |🟢|
 
 ## HTML Attribute Reference
 
