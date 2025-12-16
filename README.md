@@ -22,6 +22,7 @@
 | [`<acronym>`](acronym/acronym.md) | Defines an acronym |🔴|
 | [`<abbr>`](abbr/abbr.md) | Defines an abbreviation or an acronym |🟢|
 | [`<title>`](title_tag/title.md) | Defines a title for the document |🟢|
+| [`<a>`](a/a.md) | Defines a hyperlink |🟢|
 
 ## HTML Global Attributes
 
