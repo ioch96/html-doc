@@ -102,37 +102,37 @@
 | [`<s>`](#) |	Defines text that is no longer correct |🟢|🔴|
 | [`<samp>`](#) |	Defines sample output from a computer program |🟢|🔴|
 | [`<script>`](#) |	Defines a client-side script |🟢|🔴|
-| [`<search>`](#) |	Defines a search section |🟢|🔴|
-| [`<section>`](#) |	Defines a section in a document |🟢|🔴|
+|[`<search>`](#)|Defines a search section|🟢|🔴|
+|[`<section>`](#)|Defines a section in a document |🟢|🔴|
 | [`<select>`](#) |	Defines a drop-down list |🟢|🔴|
 | [`<small>`](#) |	Defines smaller text |🟢|🔴|
 | [`<source>`](#) |	Defines multiple media resources for media elements (<video> and <audio>) |🟢|🔴|
 | [`<span>`](#) |	Defines a section in a document |🟢|🔴|
 | [`<strike>`](#) | Defines strikethrough text |🔴|🔴|
 | [`<strong>`](strong/strong.md) |	Defines important text |🟢|🟢|
-| [`<style>`](#) |	Defines style information for a document |🟢|🔴|
-| [`<sub>`](#) |	Defines subscripted text |🟢|🔴|
-| [`<summary>`](#) |	Defines a visible heading for a <details> element |🟢|🔴|
-| [`<sup>`](#) |	Defines superscripted text |🟢|🔴|
-| [`<svg>`](#) |	Defines a container for SVG graphics |🟢|🔴|
-| [`<table>`](#) |	Defines a table |🟢|🔴|
-| [`<tbody>`](#) |	Groups the body content in a table |🟢|🔴|
-| [`<td>`](#) |	Defines a cell in a table |🟢|🔴|
-| [`<template>`](#) |	Defines a container for content that should be hidden when the page loads |🟢|🔴|
-| [`<textarea>`](#) |	Defines a multiline input control (text area) |🟢|🔴|
-| [`<tfoot>`](#) |	Groups the footer content in a table |🟢|🔴|
-| [`<th>`](#) |	Defines a header cell in a table |🟢|🔴|
-| [`<thead>`](#) |	Groups the header content in a table |🟢|🔴|
-| [`<time>`](#) |	Defines a specific time (or datetime) |🟢|🔴|
+| [`<style>`](style/style.md) |	Defines style information for a document |🟢|🔴|
+| [`<sub>`](sub/sub.md) |	Defines subscripted text |🟢|🔴|
+| [`<summary>`](summary/summary.md) |	Defines a visible heading for a <details> element |🟢|🔴|
+| [`<sup>`](sup/sup.md) |	Defines superscripted text |🟢|🔴|
+| [`<svg>`](svg/svg.md) |	Defines a container for SVG graphics |🟢|🔴|
+| [`<table>`](table/table.md) |	Defines a table |🟢|🔴|
+| [`<tbody>`](tbody/tbody.md) |	Groups the body content in a table |🟢|🔴|
+| [`<td>`](td/td.md) |	Defines a cell in a table |🟢|🔴|
+| [`<template>`](template/template.md) |	Defines a container for content that should be hidden when the page loads |🟢|🔴|
+| [`<textarea>`](textarea/textarea.md) |	Defines a multiline input control (text area) |🟢|🔴|
+| [`<tfoot>`](tfoot/tfoot.md) |	Groups the footer content in a table |🟢|🔴|
+| [`<th>`](th/th.md) |	Defines a header cell in a table |🟢|🔴|
+| [`<thead>`](thead/thead.md) |	Groups the header content in a table |🟢|🔴|
+| [`<time>`](time/time.md) |	Defines a specific time (or datetime) |🟢|🔴|
 | [`<title>`](title_tag/title.md) | Defines a title for the document |🟢|🟢|
-| [`<tr>`](#) |	Defines a row in a table |🟢|🔴|
-| [`<track>`](#) |	Defines text tracks for media elements (<video> and <audio>) |🟢|🔴|
-| [`<tt>`](#) | Defines teletype text |🔴|🔴|
-| [`<u>`](#) |	Defines some text that is unarticulated and styled differently from normal text |🟢|🔴|
-| [`<ul>`](#) |	Defines an unordered list |🟢|🔴|
-| [`<var>`](#) |	Defines a variable |🟢|🔴|
-| [`<video>`](#) |	Defines embedded video content |🟢|🔴|
-| [`<wbr>`](#) |	Defines a possible line-break |🟢|🔴|
+| [`<tr>`](tr/tr.md) |	Defines a row in a table |🟢|🔴|
+| [`<track>`](track/track.md) |	Defines text tracks for media elements (<video> and <audio>) |🟢|🔴|
+| [`<tt>`](tt/tt.md) | Defines teletype text |🔴|🔴|
+| [`<u>`](u/u.md) |	Defines some text that is unarticulated and styled differently from normal text |🟢|🔴|
+| [`<ul>`](ul/ul.md) |	Defines an unordered list |🟢|🔴|
+| [`<var>`](var/var.md) |	Defines a variable |🟢|🔴|
+| [`<video>`](video/video.md) |	Defines embedded video content |🟢|🔴|
+| [`<wbr>`](wbr/wbr.md) |	Defines a possible line-break |🟢|🔴|
 
 ## HTML Global Attributes
 
