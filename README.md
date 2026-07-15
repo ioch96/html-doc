@@ -32,7 +32,7 @@
 | [`<center>`](center/center.md) | Defines centered text |🔴|
 | [`<cite>`](#) | Defines the title of a work |🟢|
 | [`<code>`](#) |	Defines a piece of computer code |🟢|
-| [`<col>`](#) | Specifies column properties for each column within a <colgroup> element  |🟢|
+| [`<col>`](#) | Specifies column properties for each column within a `<colgroup>` element  |🟢|
 | [`<colgroup>`](#)	| Specifies a group of one or more columns in a table for formatting |🟢|
 | [`<data>`](#)	| Adds a machine-readable translation of a given content |🟢|
 | [`<datalist>`](#)	| Specifies a list of pre-defined options for input controls |🟢|
@@ -153,11 +153,3 @@ The global attributes are attributes that can be used with all HTML elements.
 | [`tabindex`](#) | Specifies the tabbing order of an element |🟢|
 | [`title`](title_attribute/title.md) | Specifies extra information about an element |🟢|
 | [`translate`](#) | Specifies whether the content of an element should be translated or not |🟢|
-
-## HTML Attribute Reference
-
-The table below lists all HTML attributes and what elements they can be used within:
-
-| Attribute | Belongs to | Description |Support|
-|:-|:-|:-|:-:|
-| [`-`]() | - | - |🟢|
