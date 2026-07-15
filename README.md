@@ -9,7 +9,7 @@
 | [`<!--...-->`](comment/comment.md) | Defines a comment |🟢|🟢|
 | [`<!DOCTYPE>`](doctype/doctype.md) | Defines the document type |🟢|🟢|
 | [`<a>`](a/a.md) | Defines a hyperlink |🟢|🟢|
-| [`<abbr>`](abbr/abbr.md) | Defines an abbreviation or an acronym |🟢|🔴|
+| [`<abbr>`](abbr/abbr.md) | Defines an abbreviation or an acronym |🟢|🟢|
 | [`<acronym>`](acronym/acronym.md) | Defines an acronym |🔴|🟢|
 | [`<address>`](#) | Defines contact information for the author/owner of a document |🟢|🔴|
 | [`<applet>`](#) | Defines an embedded applet |🔴|🔴|
