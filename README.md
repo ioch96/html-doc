@@ -1,5 +1,10 @@
 # HTML Documentation
 
+## Toola
+
+- VSC Extensions
+  - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
 ## HTML Element Reference
 
 ---
@@ -153,3 +158,20 @@ The global attributes are attributes that can be used with all HTML elements.
 | [`tabindex`](#) | Specifies the tabbing order of an element |🟢|🔴|
 | [`title`](title_attribute/title.md) | Specifies extra information about an element |🟢|🟢|
 | [`translate`](#) | Specifies whether the content of an element should be translated or not |🟢|🔴|
+
+## Some HTML Symbol Entities
+
+|Char |	Number | Entity |	Description |
+|:-:|:-:|:-:|:-|
+| © | `&#169;` | `&copy;` | COPYRIGHT	|
+| ® | `&#174;` | `&reg;` | REGISTERED TRADEMARK |
+| € | `&#8364;` | `&euro;` | EURO SIGN	|
+| ™ | `&#8482;` | `&trade;` | TRADEMARK	|
+| ← | `&#8592;` | `&larr;` | LEFT ARROW |
+| ↑ | `&#8593;` | `&uarr;` | UP ARROW |
+| → | `&#8594;` | `&rarr;` | RIGHT ARROW |
+| ↓ | `&#8595;` | `&darr;` | DOWN ARROW |
+| ♠ | `&#9824;` | `&spades;` | SPADE	|
+| ♣ | `&#9827;` | `&clubs;` |	CLUB |
+| ♥ | `&#9829;` | `&hearts;` | HEART	|
+| ♦ | `&#9830;` | `&diams;`	| DIAMOND |
