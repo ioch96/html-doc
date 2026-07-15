@@ -109,7 +109,7 @@
 | [`<source>`](#) |	Defines multiple media resources for media elements (<video> and <audio>) |🟢|🔴|
 | [`<span>`](#) |	Defines a section in a document |🟢|🔴|
 | [`<strike>`](#) | Defines strikethrough text |🔴|🔴|
-| [`<strong>`](#) |	Defines important text |🟢|🔴|
+| [`<strong>`](strong/strong.md) |	Defines important text |🟢|🔴|
 | [`<style>`](#) |	Defines style information for a document |🟢|🔴|
 | [`<sub>`](#) |	Defines subscripted text |🟢|🔴|
 | [`<summary>`](#) |	Defines a visible heading for a <details> element |🟢|🔴|
