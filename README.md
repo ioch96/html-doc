@@ -22,7 +22,7 @@
 | [`<article>`](#) | Defines an article |🟢|🔴|
 | [`<aside>`](#) | Defines content aside from the page content |🟢|🔴|
 | [`<audio>`](#) | Defines embedded sound content |🟢|🔴|
-| [`<b>`](b/b.md) | Defines bold text |🟢|🔴|
+| [`<b>`](b/b.md) | Defines bold text |🟢|🟢|
 | [`<base>`](#) | Specifies the base URL/target for all relative URLs in a document |🟢|🔴|
 | [`<basefont>`](#) | Specifies a default color, size, and font for all text in a document |🔴|🔴|
 | [`<bdi>`](#) | Isolates a part of text that might be formatted in a different direction from other text outside it |🟢|🔴|
