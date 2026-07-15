@@ -4,7 +4,7 @@
 
 ---
 
-| HTML Tag | Description |HTML5 Support|Documentation|
+| HTML Tag | Description |HTML5|Documentation|
 |:-|:-|:-:|:-:|
 | [`<!--...-->`](comment/comment.md) | Defines a comment |🟢|🟢|
 | [`<!DOCTYPE>`](doctype/doctype.md) | Defines the document type |🟢|🟢|
@@ -133,7 +133,7 @@
 
 The global attributes are attributes that can be used with all HTML elements.
 
-| HTML Attribute | Description |HTML5 Support|Documentation|
+| HTML Attribute | Description |HTML5|Documentation|
 |:-|:-|:-:|:-:|
 | [`accesskey`](#) | Specifies a shortcut key to activate/focus an element |🟢|🔴|
 | [`class`](#) | Specifies one or more classnames for an element (refers to a class in a style sheet) |🟢|🔴|
