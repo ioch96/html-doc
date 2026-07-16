@@ -1,165 +1,154 @@
-# HTML Documentation
+# Εισαγωγή στην HTML5
 
-## Toola
+## Εργαλεία
 
 - VSC Extensions
   - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+- [Semantic HTML](semantic.md)
 
-## HTML Element Reference
+## Element Reference
 
 ---
 
-|HTML Tag|Description|HTML5|Documentation|
-|:-|:-|:-:|:-:|
-|[`<!--...-->`](comment/comment.md)|Defines a comment|🟢|🟢|
-|[`<!DOCTYPE>`](doctype/doctype.md)|Defines the document type|🟢|🟢|
-|[`<a>`](a/a.md)|Defines a hyperlink|🟢|🟢|
-|[`<abbr>`](abbr/abbr.md)|Defines an abbreviation or an acronym|🟢|🟢|
-|[`<acronym>`](acronym/acronym.md)|Defines an acronym|🔴|🟢|
-|[`<address>`](address/address.md)|Defines contact information for the author/owner of a document|🟢|🔴|
-|[`<applet>`](applet/applet.md)|Defines an embedded applet|🔴|🔴|
-|[`<area>`](area/area.md)|Defines an area inside an image map|🟢|🔴|
-|[`<article>`](article/article.md)|Defines an article|🟢|🔴|
-|[`<aside>`](aside/aside.md)|Defines content aside from the page content|🟢|🔴|
-|[`<audio>`](audio/audio.md)|Defines embedded sound content|🟢|🔴|
-|[`<b>`](b/b.md)|Defines bold text|🟢|🟢|
-|[`<base>`](base/base.md)|Specifies the base URL/target for all relative URLs in a document|🟢|🔴|
-|[`<basefont>`](basefont/basefont.md)|Specifies a default color, size, and font for all text in a document|🔴|🔴|
-|[`<bdi>`](bdi/bdi.md)|Isolates a part of text that might be formatted in a different direction from other text outside it|🟢|🔴|
-|[`<bdo>`](bdo/bdo.md)|Overrides the current text direction|🟢|🔴|
-|[`<big>`](big/big.md)|Defines big text|🔴|🔴|
-|[`<blockquote>`](blockquote/blockquote.md)|Defines a section that is quoted from another source|🟢|🟢|
-|[`<body>`](body/body.md)|Defines the document's body|🟢|🟢|
-|[`<br>`](br/br.md)|Defines a single line break|🟢|🟢|
-|[`<button>`](button/button.md)|Defines a clickable button|🟢|🔴|
-|[`<canvas>`](canvas/canvas.md)|Used to draw graphics, on the fly, via scripting (usually JavaScript)|🟢|🔴|
-|[`<caption>`](caption/caption.md)|Defines a table caption|🟢|🔴|
-|[`<center>`](center/center.md)|Defines centered text|🔴|🟢|
-|[`<cite>`](cite/cite.md)|Defines the title of a work|🟢|🔴|
-|[`<code>`](code/code.md)|Defines a piece of computer code|🟢|🔴|
-|[`<col>`](col/col.md)|Specifies column properties for each column within a `<colgroup>` element|🟢|🔴|
-|[`<colgroup>`](colgroup/colgroup.md)|Specifies a group of one or more columns in a table for formatting|🟢|🔴|
-|[`<data>`](data/data.md)|Adds a machine-readable translation of a given content|🟢|🔴|
-|[`<datalist>`](datalist/datalist.md)|Specifies a list of pre-defined options for input controls|🟢|🔴|
-|[`<dd>`](dd/dd.md)|Defines a description/value of a term in a description list|🟢|🔴|
-|[`<del>`](del/del.md)|Defines text that has been deleted from a document|🟢|🔴|
-|[`<details>`](details/details.md)|Defines additional details that the user can view or hide|🟢|🔴|
-|[`<dfn>`](dfn/dfn.md)|Specifies a term that is going to be defined within the content|🟢|🔴|
-|[`<dialog>`](dialog/dialog.md)|Defines a dialog box or window|🟢|🔴|
-|[`<dir>`](dir/dir.md)|Defines a directory list|🔴|🔴|
-|[`<div>`](div/div.md)|Defines a section in a document|🟢|🔴|
-|[`<dl>`](dl/dl.md)|Defines a description list|🟢|🔴|
-|[`<dt>`](dt/dt.md)|Defines a term/name in a description list|🟢|🔴|
-|[`<em>`](em/em.md)|Defines emphasized text|🟢|🔴|
-|[`<embed>`](embed/embed.md)|Defines a container for an external application|🟢|🔴|
-|[`<fieldset>`](fieldset/fieldset.md)|Groups related elements in a form|🟢|🔴|
-|[`<figcaption>`](figcaption/figcaption.md)|Defines a caption for a `<figure>` element|🟢|🔴|
-|[`<figure>`](figure/figure.md)|Specifies self-contained content|🟢|🔴|
-|[`<font>`](font/font.md)|Defines font, color, and size for text|🔴|🔴|
-|[`<footer>`](footer/footer.md)|Defines a footer for a document or section|🟢|🔴|
-|[`<form>`](form/form.md)|Defines an HTML form for user input|🟢|🔴|
-|[`<frame>`](frame/frame.md)|Defines a window (a frame) in a frameset|🔴|🔴|
-|[`<frameset>`](frameset/frameset.md)|Defines a set of frames|🔴|🔴|
-|[`<h1> - <h6>`](headings/headings.md)|Defines HTML headings|🟢|🟢|
-|[`<head>`](head/head.md)|Contains metadata/information for the document|🟢|🟢|
-|[`<header>`](header/header.md)|Defines a header for a document or section|🟢|🔴|
-|[`<hgroup>`](hgroup/hgroup.md)|Defines a header and related content|🟢|🔴|
-|[`<hr>`](hr/hr.md)|Defines a thematic change in the content|🟢|🟢|
-|[`<html>`](html/html.md)|Defines the root of an HTML document|🟢|🟢|
-|[`<i>`](i/i.md)|Defines a part of text in an alternate voice or mood|🟢|🔴|
-|[`<iframe>`](iframe/iframe.md)|Defines an inline frame|🟢|🔴|
-|[`<img>`](img/img.md)|Defines an image|🟢|🔴|
-|[`<input>`](input/input.md)|Defines an input control|🟢|🔴|
-|[`<ins>`](ins/ins.md)|Defines a text that has been inserted into a document|🟢|🔴|
-|[`<kbd>`](kbd/kbd.md)|Defines keyboard input|🟢|🔴|
-|[`<label>`](label/label.md)|Defines a label for an `<input>` element|🟢|🔴|
-|[`<legend>`](legend/legend.md)|Defines a caption for a `<fieldset>` element|🟢|🔴|
-|[`<li>`](li/li.md)|Defines a list item|🟢|🔴|
-|[`<link>`](link/link.md)|Defines the relationship between a document and an external resource (most used to link to style sheets)|🟢|🔴|
-|[`<main>`](main/main.md)|Specifies the main content of a document|🟢|🔴|
-|[`<map>`](map/map.md)|Defines an image map|🟢|🔴|
-|[`<mark>`](mark/mark.md)|Defines marked/highlighted text|🟢|🔴|
-|[`<menu>`](menu/menu.md)|Defines an unordered list|🟢|🔴|
-|[`<meta>`](meta/meta.md)|Defines metadata about an HTML document|🟢|🔴|
-|[`<meter>`](meter/meter.md)|Defines a scalar measurement within a known range (a gauge)|🟢|🔴|
-|[`<nav>`](nav/nav.md)|Defines navigation links|🟢|🔴|
-|[`<noframes>`](noframes/noframes.md)|Defines an alternate content for users that do not support frames|🔴|🔴|
-|[`<noscript>`](noscript/noscript.md)|Defines an alternate content for users that do not support client-side scripts|🟢|🔴|
-|[`<object>`](object/object.md)|Defines a container for an external application|🟢|🔴|
-|[`<ol>`](ol/ol.md)|Defines an ordered list|🟢|🔴|
-|[`<optgroup>`](optgroup/optgroup.md)|Defines a group of related options in a drop-down list|🟢|🔴|
-|[`<option>`](option/option.md)|Defines an option in a drop-down list|🟢|🔴|
-|[`<output>`](output/output.md)|Defines the result of a calculation|🟢|🔴|
-|[`<p>`](p/p.md)|Defines a paragraph|🟢|🟢|
-|[`<param>`](param/param.md)|Defines a parameter for an object|🟢|🔴|
-|[`<picture>`](picture/picture.md)|Defines a container for multiple image resources|🟢|🔴|
-|[`<pre>`](pre/pre.md)|Defines preformatted text|🟢|🟢|
-|[`<progress>`](progress/progress.md)|Represents the progress of a task|🟢|🔴|
-|[`<q>`](q/q.md)|Defines a short quotation|🟢|🔴|
-|[`<rp>`](rp/rp.md)|Defines what to show in browsers that do not support ruby annotations|🟢|🔴|
-|[`<rt>`](rt/rt.md)|Defines an explanation/pronunciation of characters (for East Asian typography)|🟢|🔴|
-|[`<ruby>`](ruby/ruby.md)|Defines a ruby annotation (for East Asian typography)|🟢|🔴|
-|[`<s>`](s/s.md)|Defines text that is no longer correct|🟢|🔴|
-|[`<samp>`](samp/samp.md)|Defines sample output from a computer program|🟢|🔴|
-|[`<script>`](script/script.md)|Defines a client-side script|🟢|🔴|
-|[`<search>`](search/search.md)|Defines a search section|🟢|🔴|
-|[`<section>`](section/section.md)|Defines a section in a document|🟢|🔴|
-|[`<select>`](select/select.md)|Defines a drop-down list|🟢|🔴|
-|[`<small>`](small/small.md)|Defines smaller text|🟢|🔴|
-|[`<source>`](source/source.md)|Defines multiple media resources for media elements (`<video>` and `<audio>`)|🟢|🔴|
-|[`<span>`](span/span.md)|Defines a section in a document|🟢|🔴|
-|[`<strike>`](strike/strike.md)|Defines strikethrough text|🔴|🔴|
-|[`<strong>`](strong/strong.md)|Defines important text|🟢|🟢|
-|[`<style>`](style/style.md)|Defines style information for a document|🟢|🔴|
-|[`<sub>`](sub/sub.md)|Defines subscripted text|🟢|🔴|
-|[`<summary>`](summary/summary.md)|Defines a visible heading for a `<details>` element|🟢|🔴|
-|[`<sup>`](sup/sup.md)|Defines superscripted text|🟢|🔴|
-|[`<svg>`](svg/svg.md)|Defines a container for SVG graphics|🟢|🔴|
-|[`<table>`](table/table.md)|Defines a table|🟢|🔴|
-|[`<tbody>`](tbody/tbody.md)|Groups the body content in a table|🟢|🔴|
-|[`<td>`](td/td.md)|Defines a cell in a table|🟢|🔴|
-|[`<template>`](template/template.md)|Defines a container for content that should be hidden when the page loads|🟢|🔴|
-|[`<textarea>`](textarea/textarea.md)|Defines a multiline input control (text area)|🟢|🔴|
-|[`<tfoot>`](tfoot/tfoot.md)|Groups the footer content in a table|🟢|🔴|
-|[`<th>`](th/th.md)|Defines a header cell in a table|🟢|🔴|
-|[`<thead>`](thead/thead.md)|Groups the header content in a table|🟢|🔴|
-|[`<time>`](time/time.md)|Defines a specific time (or datetime)|🟢|🔴|
-|[`<title>`](title_tag/title.md)|Defines a title for the document|🟢|🟢|
-|[`<tr>`](tr/tr.md)|Defines a row in a table|🟢|🔴|
-|[`<track>`](track/track.md)|Defines text tracks for media elements (`<video>` and `<audio>`)|🟢|🔴|
-|[`<tt>`](tt/tt.md)|Defines teletype text|🔴|🔴|
-|[`<u>`](u/u.md)|Defines some text that is unarticulated and styled differently from normal text|🟢|🔴|
-|[`<ul>`](ul/ul.md)|Defines an unordered list|🟢|🔴|
-|[`<var>`](var/var.md)|Defines a variable|🟢|🔴|
-|[`<video>`](video/video.md)|Defines embedded video content|🟢|🔴|
-|[`<wbr>`](wbr/wbr.md)|Defines a possible line-break|🟢|🔴|
+|HTML Tag|Description|Documentation|
+|:-|:-|:-:|
+|[`<!--...-->`](tags/comment.md)|Ορίζει ένα σχόλιο|🟢|
+|[`<!DOCTYPE>`](tags/doctype.md)|Ορίζει τον τύπο του εγγράφου|🟢|
+|[`<a>`](tags/a.md)|Ορίζει έναν υπερσύνδεσμο|🟢|
+|[`<abbr>`](tags/abbr.md)|Ορίζει μια συντομογραφία ή ένα ακρωνύμιο|🟢|
+|[`<address>`](tags/address.md)|Ορίζει στοιχεία επικοινωνίας του συγγραφέα ή του κατόχου του εγγράφου|🔴|
+|[`<area>`](tags/area.md)|Ορίζει μια περιοχή μέσα σε έναν χάρτη εικόνας (image map)|🔴|
+|[`<article>`](tags/article.md)|Ορίζει ένα άρθρο|🟢|
+|[`<aside>`](tags/aside.md)|Ορίζει συμπληρωματικό περιεχόμενο|🟢|
+|[`<audio>`](tags/audio.md)|Ορίζει ενσωματωμένο ηχητικό περιεχόμενο|🟢|
+|[`<b>`](tags/b.md)|Ορίζει έντονο κείμενο|🟢|
+|[`<base>`](tags/base.md)|Καθορίζει τη βασική διεύθυνση URL ή τον προορισμό για όλα τα σχετικά URLs|🔴|
+|[`<bdi>`](tags/bdi.md)|Απομονώνει κείμενο με διαφορετική κατεύθυνση γραφής|🔴|
+|[`<bdo>`](tags/bdo.md)|Αντικαθιστά την τρέχουσα κατεύθυνση γραφής|🔴|
+|[`<blockquote>`](tags/blockquote.md)|Ορίζει ένα απόσπασμα από άλλη πηγή|🟢|
+|[`<body>`](tags/body.md)|Ορίζει το σώμα του εγγράφου|🟢|
+|[`<br>`](tags/br.md)|Ορίζει αλλαγή γραμμής|🟢|
+|[`<button>`](tags/button.md)|Ορίζει ένα κουμπί|🔴|
+|[`<canvas>`](tags/canvas.md)|Χρησιμοποιείται για σχεδίαση γραφικών μέσω JavaScript|🔴|
+|[`<caption>`](tags/caption.md)|Ορίζει λεζάντα πίνακα|🔴|
+|[`<cite>`](tags/cite.md)|Ορίζει τον τίτλο ενός έργου|🔴|
+|[`<code>`](tags/code.md)|Ορίζει τμήμα κώδικα προγράμματος|🟢|
+|[`<col>`](tags/col.md)|Καθορίζει ιδιότητες μιας στήλης σε `<colgroup>`|🔴|
+|[`<colgroup>`](tags/colgroup.md)|Ορίζει ομάδα στηλών σε πίνακα|🔴|
+|[`<data>`](tags/data.md)|Προσθέτει μηχανικά αναγνώσιμη τιμή σε περιεχόμενο|🔴|
+|[`<datalist>`](tags/datalist.md)|Ορίζει λίστα προκαθορισμένων επιλογών για στοιχεία εισαγωγής|🔴|
+|[`<dd>`](tags/dd.md)|Ορίζει την περιγραφή ενός όρου σε λίστα περιγραφών|🔴|
+|[`<del>`](tags/del.md)|Ορίζει διαγραμμένο κείμενο|🔴|
+|[`<details>`](tags/details.md)|Ορίζει πρόσθετες πληροφορίες που μπορούν να εμφανιστούν ή να αποκρυφτούν|🔴|
+|[`<dfn>`](tags/dfn.md)|Ορίζει έναν όρο που πρόκειται να εξηγηθεί|🔴|
+|[`<dialog>`](tags/dialog.md)|Ορίζει παράθυρο διαλόγου|🔴|
+|[`<div>`](tags/div.md)|Ορίζει μια ενότητα του εγγράφου|🟢|
+|[`<dl>`](tags/dl.md)|Ορίζει λίστα περιγραφών|🔴|
+|[`<dt>`](tags/dt.md)|Ορίζει τον όρο μιας λίστας περιγραφών|🔴|
+|[`<em>`](tags/em.md)|Ορίζει κείμενο με έμφαση|🟢|
+|[`<embed>`](tags/embed.md)|Ορίζει ένα δοχείο για εξωτερικό περιεχόμενο|🟢|
+|[`<fieldset>`](tags/fieldset.md)|Ομαδοποιεί σχετικά στοιχεία μιας φόρμας|🔴|
+|[`<figcaption>`](tags/figcaption.md)|Ορίζει λεζάντα για ένα `<figure>`|🟢|
+|[`<figure>`](tags/figure.md)|Ορίζει αυτόνομο περιεχόμενο|🟢|
+|[`<footer>`](tags/footer.md)|Ορίζει το υποσέλιδο ενός εγγράφου ή μιας ενότητας|🟢|
+|[`<form>`](tags/form.md)|Ορίζει μια φόρμα HTML|🔴|
+|[`<h1> - <h6>`](tags/headings.md)|Ορίζει επικεφαλίδες HTML|🟢|
+|[`<head>`](tags/head.md)|Περιέχει μεταδεδομένα του εγγράφου|🟢|
+|[`<header>`](tags/header.md)|Ορίζει την κεφαλίδα ενός εγγράφου ή μιας ενότητας|🟢|
+|[`<hgroup>`](tags/hgroup.md)|Ορίζει ομάδα επικεφαλίδων|🔴|
+|[`<hr>`](tags/hr.md)|Ορίζει μια θεματική αλλαγή στο περιεχόμενο|🟢|
+|[`<html>`](tags/html.md)|Ορίζει τη ρίζα ενός εγγράφου HTML|🟢|
+|[`<i>`](tags/i.md)|Ορίζει κείμενο με εναλλακτική φωνή ή διάθεση|🟢|
+|[`<iframe>`](tags/iframe.md)|Ορίζει ένα ενσωματωμένο πλαίσιο (inline frame)|🔴|
+|[`<img>`](tags/img.md)|Ορίζει μια εικόνα|🟢|
+|[`<input>`](tags/input.md)|Ορίζει ένα στοιχείο εισαγωγής δεδομένων|🔴|
+|[`<ins>`](tags/ins.md)|Ορίζει κείμενο που έχει προστεθεί σε ένα έγγραφο|🔴|
+|[`<kbd>`](tags/kbd.md)|Ορίζει είσοδο από πληκτρολόγιο|🔴|
+|[`<label>`](tags/label.md)|Ορίζει μια ετικέτα για ένα στοιχείο `<input>`|🔴|
+|[`<legend>`](tags/legend.md)|Ορίζει λεζάντα για ένα στοιχείο `<fieldset>`|🔴|
+|[`<li>`](tags/li.md)|Ορίζει ένα στοιχείο λίστας|🟢|
+|[`<link>`](tags/link.md)|Ορίζει τη σχέση μεταξύ ενός εγγράφου και ενός εξωτερικού πόρου (συνήθως αρχείου CSS)|🔴|
+|[`<main>`](tags/main.md)|Ορίζει το κύριο περιεχόμενο του εγγράφου|🟢|
+|[`<map>`](tags/map.md)|Ορίζει έναν χάρτη εικόνας (image map)|🔴|
+|[`<mark>`](tags/mark.md)|Ορίζει επισημασμένο ή τονισμένο κείμενο|🟢|
+|[`<menu>`](tags/menu.md)|Ορίζει μια μη αριθμημένη λίστα|🔴|
+|[`<meta>`](tags/meta.md)|Ορίζει μεταδεδομένα για ένα έγγραφο HTML|🔴|
+|[`<meter>`](tags/meter.md)|Ορίζει μια μέτρηση μέσα σε ένα γνωστό εύρος τιμών|🔴|
+|[`<nav>`](tags/nav.md)|Ορίζει μια περιοχή πλοήγησης|🟢|
+|[`<noscript>`](tags/noscript.md)|Ορίζει εναλλακτικό περιεχόμενο για χρήστες που δεν υποστηρίζουν JavaScript|🔴|
+|[`<object>`](tags/object.md)|Ορίζει ένα δοχείο για εξωτερικό περιεχόμενο|🔴|
+|[`<ol>`](tags/ol.md)|Ορίζει μια αριθμημένη λίστα|🟢|
+|[`<optgroup>`](tags/optgroup.md)|Ορίζει μια ομάδα σχετικών επιλογών σε αναπτυσσόμενη λίστα|🔴|
+|[`<option>`](tags/option.md)|Ορίζει μια επιλογή σε αναπτυσσόμενη λίστα|🔴|
+|[`<output>`](tags/output.md)|Ορίζει το αποτέλεσμα ενός υπολογισμού|🔴|
+|[`<p>`](tags/p.md)|Ορίζει μια παράγραφο|🟢|
+|[`<param>`](tags/param.md)|Ορίζει μια παράμετρο για ένα στοιχείο `<object>`|🔴|
+|[`<picture>`](tags/picture.md)|Ορίζει ένα δοχείο για πολλαπλές πηγές εικόνων|🔴|
+|[`<pre>`](tags/pre.md)|Ορίζει προμορφοποιημένο κείμενο|🟢|
+|[`<progress>`](tags/progress.md)|Αναπαριστά την πρόοδο μιας εργασίας|🔴|
+|[`<q>`](tags/q.md)|Ορίζει ένα σύντομο απόσπασμα|🔴|
+|[`<rp>`](tags/rp.md)|Ορίζει τι θα εμφανίζεται σε browsers που δεν υποστηρίζουν τις ruby annotations|🔴|
+|[`<rt>`](tags/rt.md)|Ορίζει την επεξήγηση ή προφορά χαρακτήρων (για ασιατική τυπογραφία)|🔴|
+|[`<ruby>`](tags/ruby.md)|Ορίζει μια ruby annotation (για ασιατική τυπογραφία)|🔴|
+|[`<s>`](tags/s.md)|Ορίζει κείμενο που δεν θεωρείται πλέον σωστό|🔴|
+|[`<samp>`](tags/samp.md)|Ορίζει δείγμα εξόδου από πρόγραμμα υπολογιστή|🔴|
+|[`<script>`](tags/script.md)|Ορίζει ένα script που εκτελείται στον browser|🔴|
+|[`<search>`](tags/search.md)|Ορίζει μια ενότητα αναζήτησης|🔴|
+|[`<section>`](tags/section.md)|Ορίζει μια θεματική ενότητα ενός εγγράφου|🟢|
+|[`<select>`](tags/select.md)|Ορίζει μια αναπτυσσόμενη λίστα επιλογών|🔴|
+|[`<small>`](tags/small.md)|Ορίζει μικρότερο κείμενο|🟢|
+|[`<source>`](tags/source.md)|Ορίζει πολλαπλές πηγές πολυμέσων για στοιχεία `<video>` και `<audio>`|🔴|
+|[`<span>`](tags/span.md)|Ορίζει μια ενότητα μέσα σε ένα έγγραφο|🔴|
+|[`<strong>`](tags/strong.md)|Ορίζει σημαντικό κείμενο|🟢|
+|[`<style>`](tags/style.md)|Ορίζει κανόνες μορφοποίησης (CSS) για ένα έγγραφο|🔴|
+|[`<sub>`](tags/sub.md)|Ορίζει δείκτη κάτω (υπογεγραμμένο κείμενο)|🔴|
+|[`<summary>`](tags/summary.md)|Ορίζει την ορατή επικεφαλίδα ενός στοιχείου `<details>`|🔴|
+|[`<sup>`](tags/sup.md)|Ορίζει δείκτη πάνω (εκθέτη)|🔴|
+|[`<svg>`](tags/svg.md)|Ορίζει ένα δοχείο για γραφικά SVG|🔴|
+|[`<table>`](tags/table.md)|Ορίζει έναν πίνακα|🔴|
+|[`<tbody>`](tags/tbody.md)|Ομαδοποιεί το σώμα ενός πίνακα|🔴|
+|[`<td>`](tags/td.md)|Ορίζει ένα κελί πίνακα|🔴|
+|[`<template>`](tags/template.md)|Ορίζει ένα δοχείο για περιεχόμενο που παραμένει κρυφό μέχρι να χρησιμοποιηθεί|🔴|
+|[`<textarea>`](tags/textarea.md)|Ορίζει ένα πεδίο εισαγωγής πολλαπλών γραμμών|🔴|
+|[`<tfoot>`](tags/tfoot.md)|Ομαδοποιεί το υποσέλιδο ενός πίνακα|🔴|
+|[`<th>`](tags/th.md)|Ορίζει ένα κελί επικεφαλίδας πίνακα|🔴|
+|[`<thead>`](tags/thead.md)|Ομαδοποιεί την επικεφαλίδα ενός πίνακα|🔴|
+|[`<time>`](tags/time.md)|Ορίζει μια συγκεκριμένη ώρα ή ημερομηνία|🔴|
+|[`<title>`](tags/title.md)|Ορίζει τον τίτλο του εγγράφου|🟢|
+|[`<tr>`](tags/tr.md)|Ορίζει μια γραμμή πίνακα|🔴|
+|[`<track>`](tags/track.md)|Ορίζει αρχεία κειμένου (υπότιτλους κ.λπ.) για στοιχεία `<video>` και `<audio>`|🔴|
+|[`<u>`](tags/u.md)|Ορίζει κείμενο που επισημαίνεται με διαφορετικό τρόπο από το κανονικό|🔴|
+|[`<ul>`](tags/ul.md)|Ορίζει μια μη αριθμημένη λίστα|🟢|
+|[`<var>`](tags/var.md)|Ορίζει μια μεταβλητή|🔴|
+|[`<video>`](tags/video.md)|Ορίζει ενσωματωμένο περιεχόμενο βίντεο|🟢|
+|[`<wbr>`](tags/wbr.md)|Ορίζει ένα πιθανό σημείο αλλαγής γραμμής|🔴|
 
-## HTML Global Attributes
+## Global Attributes
 
 The global attributes are attributes that can be used with all HTML elements.
 
-|HTML Attribute|Description|HTML5|Documentation|
-|:-|:-|:-:|:-:|
-|[`accesskey`](accesskey_attribute/accesskey.md)|Specifies a shortcut key to activate/focus an element|🟢|🔴|
-|[`class`](class_attribute/class.md)|Specifies one or more classnames for an element (refers to a class in a style sheet)|🟢|🔴|
-|[`contenteditable`](contenteditable_attribute/contenteditable.md)|Specifies whether the content of an element is editable or not|🟢|🔴|
-|[`data-*`](data_attribute/data.md)|Used to store custom data private to the page or application|🟢|🔴|
-|[`dir`](dir_attribute/dir.md)|Specifies the text direction for the content in an element|🟢|🔴|
-|[`draggable`](draggable_attribute/draggable.md)|Specifies whether an element is draggable or not|🟢|🔴|
-|[`enterkeyhint`](enterkeyhint_attribute/enterkeyhint.md)|Specifies the text of the enter-key on a virtual keyboard|🟢|🔴|
-|[`hidden`](hidden_attribute/hidden.md)|Specifies that an element is not yet, or is no longer, relevant|🟢|🔴|
-|[`id`](id_attribute/id.md)|Specifies a unique id for an element|🟢|🔴|
-|[`inert`](inert_attribute/inert.md)|Specifies that the browser should ignore this section|🟢|🔴|
-|[`inputmode`](inputmode_attribute/inputmode.md)|Specifies the mode of a virtual keyboard|🟢|🔴|
-|[`lang`](lang_attribute/lang.md)|Specifies the language of the element's content|🟢|🟢|
-|[`popover`](popover_attribute/popover.md)|Specifies a popover element|🟢|🔴|
-|[`spellcheck`](spellcheck_attribute/spellcheck.md)|Specifies whether the element is to have its spelling and grammar checked or not|🟢|🔴|
-|[`style`](style_attribute/style.md)|Specifies an inline CSS style for an element|🟢|🔴|
-|[`tabindex`](tabindex_attribute/tabindex.md)|Specifies the tabbing order of an element|🟢|🔴|
-|[`title`](title_attribute/title.md)|Specifies extra information about an element|🟢|🟢|
-|[`translate`](translate_attribute/translate.md)|Specifies whether the content of an element should be translated or not|🟢|🔴|
+|HTML Attribute|Description|Documentation|
+|:-|:-|:-:|
+|[`accesskey`](attributes/accesskey.md)|Specifies a shortcut key to activate/focus an element|🔴|
+|[`class`](attributes/class.md)|Specifies one or more classnames for an element (refers to a class in a style sheet)|🔴|
+|[`contenteditable`](attributes/contenteditable.md)|Specifies whether the content of an element is editable or not|🔴|
+|[`data-*`](attributes/data.md)|Used to store custom data private to the page or application|🔴|
+|[`dir`](attributes/dir.md)|Specifies the text direction for the content in an element|🔴|
+|[`draggable`](attributes/draggable.md)|Specifies whether an element is draggable or not|🔴|
+|[`enterkeyhint`](attributes/enterkeyhint.md)|Specifies the text of the enter-key on a virtual keyboard|🔴|
+|[`hidden`](attributes/hidden.md)|Specifies that an element is not yet, or is no longer, relevant|🔴|
+|[`id`](attributes/id.md)|Specifies a unique id for an element|🔴|
+|[`inert`](attributes/inert.md)|Specifies that the browser should ignore this section|🔴|
+|[`inputmode`](attributes/inputmode.md)|Specifies the mode of a virtual keyboard|🔴|
+|[`lang`](attributes/lang.md)|Specifies the language of the element's content|🟢|
+|[`popover`](attributes/popover.md)|Specifies a popover element|🔴|
+|[`spellcheck`](attributes/spellcheck.md)|Specifies whether the element is to have its spelling and grammar checked or not|🔴|
+|[`style`](attributes/style.md)|Specifies an inline CSS style for an element|🔴|
+|[`tabindex`](attributes/tabindex.md)|Specifies the tabbing order of an element|🔴|
+|[`title`](attributes/title.md)|Specifies extra information about an element|🟢|
+|[`translate`](attributes/translate.md)|Specifies whether the content of an element should be translated or not|🔴|
 
-## Some HTML Symbol Entities
+## Some Symbol Entities
 
 |Char|Number|Entity|Description|
 |:-:|:-:|:-:|:-|
