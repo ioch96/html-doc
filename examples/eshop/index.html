@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ένα απλό ηλεκτρονικό κατάστημα με προϊόντα τεχνολογίας.">
+    <title>TechStore | Ηλεκτρονικό Κατάστημα</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>TechStore</h1>
+        <p>Προϊόντα τεχνολογίας για κάθε ανάγκη</p>
+
+        <nav aria-label="Κύρια πλοήγηση">
+            <ul>
+                <li><a href="#home">Αρχική</a></li>
+                <li><a href="#products">Προϊόντα</a></li>
+                <li><a href="#about">Σχετικά με εμάς</a></li>
+                <li><a href="#contact">Επικοινωνία</a></li>
+                <li><a href="#cart">Καλάθι</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h2>Καλώς ήρθατε στο TechStore</h2>
+            <p>
+                Ανακαλύψτε επιλεγμένα προϊόντα τεχνολογίας σε προσιτές τιμές.
+            </p>
+            <p>
+                <a href="#products">Δείτε τα προϊόντα μας</a>
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="products">
+            <h2>Δημοφιλή προϊόντα</h2>
+
+            <article>
+                <h3>Ασύρματα Ακουστικά</h3>
+                <img src="images/headphones.jpg" alt="Μαύρα ασύρματα ακουστικά" width="300" height="200">
+                <p>
+                    Ασύρματα ακουστικά με καθαρό ήχο και μεγάλη διάρκεια μπαταρίας.
+                </p>
+                <p><strong>Τιμή: 49,90 €</strong></p>
+                <button type="button">Προσθήκη στο καλάθι</button>
+            </article>
+
+            <article>
+                <h3>Μηχανικό Πληκτρολόγιο</h3>
+                <img src="images/keyboard.jpg" alt="Μηχανικό πληκτρολόγιο υπολογιστή" width="300" height="200">
+                <p>
+                    Ανθεκτικό μηχανικό πληκτρολόγιο, κατάλληλο για εργασία και gaming.
+                </p>
+                <p><strong>Τιμή: 79,90 €</strong></p>
+                <button type="button">Προσθήκη στο καλάθι</button>
+            </article>
+
+            <article>
+                <h3>Ασύρματο Ποντίκι</h3>
+                <img src="images/mouse.jpg" alt="Μαύρο ασύρματο ποντίκι" width="300" height="200">
+                <p>
+                    Ελαφρύ και εργονομικό ασύρματο ποντίκι για καθημερινή χρήση.
+                </p>
+                <p><strong>Τιμή: 29,90 €</strong></p>
+                <button type="button">Προσθήκη στο καλάθι</button>
+            </article>
+
+            <article>
+                <h3>Web Camera</h3>
+                <img src="images/webcam.jpg" alt="Web camera για υπολογιστή" width="300" height="200">
+                <p>
+                    Web camera υψηλής ανάλυσης για τηλεδιασκέψεις και online μαθήματα.
+                </p>
+                <p><strong>Τιμή: 59,90 €</strong></p>
+                <button type="button">Προσθήκη στο καλάθι</button>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="cart">
+            <h2>Καλάθι αγορών</h2>
+            <p>Το καλάθι σας είναι προς το παρόν άδειο.</p>
+            <p>
+                Η λειτουργία του καλαθιού θα προστεθεί αργότερα με JavaScript.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="about">
+            <h2>Σχετικά με εμάς</h2>
+            <p>
+                Το TechStore είναι ένα εκπαιδευτικό ηλεκτρονικό κατάστημα που
+                δημιουργήθηκε ως προσωπικό project για portfolio.
+            </p>
+            <p>
+                Στόχος του project είναι να επεκταθεί σταδιακά με CSS και JavaScript.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Επικοινωνία</h2>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Ονοματεπώνυμο:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="subject">Θέμα:</label><br>
+                    <input type="text" id="subject" name="subject" required>
+                </p>
+
+                <p>
+                    <label for="message">Μήνυμα:</label><br>
+                    <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+                </p>
+
+                <button type="submit">Αποστολή μηνύματος</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 TechStore. Όλα τα δικαιώματα διατηρούνται.</p>
+        <p><a href="#home">Επιστροφή στην αρχή</a></p>
+    </footer>
+
+</body>
+
+</html>
