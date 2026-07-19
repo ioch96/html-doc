@@ -20,9 +20,13 @@
 * [Accessibility](docs/accessibility.md)
 * [SEO](docs/seo.md)
 
+### Παρατηρήσεις
+
+* []()
+
 ---
 
-## HTML5 - Elements
+## HTML5 - Στοιχεία
 
 |HTML Tag|Description|Documentation|
 |:-|:-|:-:|
@@ -139,7 +143,7 @@
 
 ---
 
-## HTML5 - Global Attributes
+## HTML5 - Global χαρακτηριστικά
 
 The global attributes are attributes that can be used with all HTML elements.
 
