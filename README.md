@@ -20,10 +20,6 @@
 * [HTML `<div>` και `<span>`](docs/div_span.md)
 * [Semantic HTML](docs/semantic-html.md)
 
-### Παρατηρήσεις
-
-* []()
-
 ---
 
 ## HTML5 - Στοιχεία
@@ -173,6 +169,7 @@ The global attributes are attributes that can be used with all HTML elements.
 ## HTML5 Entities
 
 * [Symbols](docs/entities/symbols.md)
+* [Emojis](docs/emojis.md)
 
 ---
 
@@ -185,7 +182,7 @@ The global attributes are attributes that can be used with all HTML elements.
 
 ## Tutorial
 
-* [ ] Codegrow
+* [x] Codegrow
 * [ ] [Codecademy](https://www.codecademy.com/)
   * [x] Elements and Structure
   * [x] Tables
