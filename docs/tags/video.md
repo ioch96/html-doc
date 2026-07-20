@@ -24,13 +24,24 @@
 
 ## Σύνταξη
 
+Η **προτεινόμενη σύνταξη** χρησιμοποιεί το στοιχείο `<source>`, καθώς επιτρέπει την υποστήριξη πολλαπλών μορφών βίντεο.
+
 ```html
 <video controls width="640" height="360">
   <source src="video.mp4" type="video/mp4">
-
   Ο browser σας δεν υποστηρίζει το στοιχείο video.
 </video>
 ```
+
+Εναλλακτικά, όταν χρησιμοποιείται **ένα μόνο αρχείο βίντεο**, μπορεί να οριστεί απευθείας το attribute `src`.
+
+```html
+<video controls width="640" height="360" src="video.mp4">
+  Ο browser σας δεν υποστηρίζει το στοιχείο video.
+</video>
+```
+
+> **Σημείωση:** Αν και οι δύο συντάξεις είναι έγκυρες, η χρήση του στοιχείου `<source>` θεωρείται καλύτερη πρακτική, καθώς επιτρέπει την εύκολη προσθήκη πολλαπλών μορφών βίντεο και προσφέρει μεγαλύτερη συμβατότητα μεταξύ των browsers.
 
 Το κείμενο που βρίσκεται ανάμεσα στα tags `<video>` και `</video>` εμφανίζεται μόνο σε browsers που **δεν υποστηρίζουν** το στοιχείο `<video>`.
 
@@ -41,35 +52,18 @@
 |`src`|URL|Καθορίζει τη διαδρομή (URL) του αρχείου βίντεο.|
 |`width`|pixels|Καθορίζει το πλάτος του video player.|
 |`height`|pixels|Καθορίζει το ύψος του video player.|
+|`muted`|muted|Specifies that the audio output of the video should be muted|
+|`loop`|loop|Specifies that the video will start over again, every time it is finished|
+|`controls`|controls|Specifies that video controls should be displayed (such as a play/pause button etc).|
+|`autoplay`|autoplay|Specifies that the video will start playing as soon as it is ready|
 
 ## Παράδειγμα
 
 ```html
-<!DOCTYPE html>
-<html lang="el">
-<head>
-  <title>Τίτλος του Εγγράφου</title>
-</head>
-
-<body>
-
-  <h1>Το στοιχείο video</h1>
-
-  <video
-    controls
-    width="640"
-    height="360"
-  >
-    <source
-      src="movie.mp4"
-      type="video/mp4"
-    >
-
-    Ο browser σας δεν υποστηρίζει το στοιχείο video.
-  </video>
-
-</body>
-</html>
+<video controls width="640" height="360">
+  <source src="movie.mp4" type="video/mp4">
+  Ο browser σας δεν υποστηρίζει το στοιχείο video.
+</video>
 ```
 
 ## Χρήση πολλαπλών μορφών
@@ -81,7 +75,6 @@
   <source src="movie.mp4" type="video/mp4">
   <source src="movie.webm" type="video/webm">
   <source src="movie.ogv" type="video/ogg">
-
   Ο browser σας δεν υποστηρίζει το στοιχείο video.
 </video>
 ```
@@ -131,33 +124,6 @@
 ```
 
 ---
-
-### `poster`
-
-Εμφανίζει μια εικόνα πριν ξεκινήσει η αναπαραγωγή.
-
-```html
-<video
-  controls
-  poster="thumbnail.jpg"
->
-```
-
----
-
-### `preload`
-
-Καθορίζει τον τρόπο φόρτωσης του βίντεο.
-
-```html
-<video preload="metadata">
-```
-
-Συνηθισμένες τιμές:
-
-- `none`
-- `metadata`
-- `auto`
 
 ## Βέλτιστες Πρακτικές (Best Practices)
 

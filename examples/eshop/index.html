@@ -3,145 +3,1080 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ένα απλό ηλεκτρονικό κατάστημα με προϊόντα τεχνολογίας.">
+
+    <meta name="description"
+        content="Ανακαλύψτε προϊόντα τεχνολογίας, όπως ακουστικά, πληκτρολόγια, ποντίκια και web cameras.">
+
+    <meta name="author" content="Το όνομά σας">
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="TechStore | Ηλεκτρονικό Κατάστημα">
+
+    <meta property="og:description" content="Προϊόντα τεχνολογίας για κάθε ανάγκη.">
+
+    <meta property="og:image" content="images/techstore-preview.jpg">
+
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
     <title>TechStore | Ηλεκτρονικό Κατάστημα</title>
 </head>
 
 <body>
 
-    <header>
-        <h1>TechStore</h1>
+    <!-- Σύνδεσμος προσβασιμότητας -->
+    <a href="#main-content">
+        Μετάβαση στο κύριο περιεχόμενο
+    </a>
+
+    <header id="home">
+
+        <!-- Λογότυπο -->
+        <a href="#home" aria-label="TechStore - Επιστροφή στην αρχική σελίδα">
+            <h1>TechStore</h1>
+        </a>
+
         <p>Προϊόντα τεχνολογίας για κάθε ανάγκη</p>
 
+        <!-- Κύρια πλοήγηση -->
         <nav aria-label="Κύρια πλοήγηση">
             <ul>
-                <li><a href="#home">Αρχική</a></li>
-                <li><a href="#products">Προϊόντα</a></li>
-                <li><a href="#about">Σχετικά με εμάς</a></li>
-                <li><a href="#contact">Επικοινωνία</a></li>
-                <li><a href="#cart">Καλάθι</a></li>
+                <li>
+                    <a href="#home">Αρχική</a>
+                </li>
+
+                <li>
+                    <a href="#categories">Κατηγορίες</a>
+                </li>
+
+                <li>
+                    <a href="#products">Προϊόντα</a>
+                </li>
+
+                <li>
+                    <a href="#cart">Καλάθι</a>
+                </li>
+
+                <li>
+                    <a href="#checkout">Ολοκλήρωση αγοράς</a>
+                </li>
+
+                <li>
+                    <a href="#about">Σχετικά με εμάς</a>
+                </li>
+
+                <li>
+                    <a href="#faq">Συχνές ερωτήσεις</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Επικοινωνία</a>
+                </li>
             </ul>
         </nav>
+
+        <!-- Αναζήτηση -->
+        <form action="/search" method="get" role="search">
+            <label for="search">
+                Αναζήτηση προϊόντων:
+            </label>
+
+            <input type="search" id="search" name="q" placeholder="Πληκτρολογήστε προϊόν" required>
+
+            <button type="submit">
+                Αναζήτηση
+            </button>
+        </form>
+
     </header>
 
-    <main>
+    <main id="main-content">
 
-        <section id="home">
-            <h2>Καλώς ήρθατε στο TechStore</h2>
+        <!-- Εισαγωγική ενότητα -->
+        <section aria-labelledby="welcome-title">
+
+            <h2 id="welcome-title">
+                Καλώς ήρθατε στο TechStore
+            </h2>
+
             <p>
-                Ανακαλύψτε επιλεγμένα προϊόντα τεχνολογίας σε προσιτές τιμές.
+                Ανακαλύψτε επιλεγμένα προϊόντα τεχνολογίας
+                σε προσιτές τιμές.
             </p>
+
             <p>
-                <a href="#products">Δείτε τα προϊόντα μας</a>
+                Στο TechStore θα βρείτε προϊόντα για εργασία,
+                ψυχαγωγία, gaming και online επικοινωνία.
             </p>
+
+            <p>
+                <a href="#products">
+                    Δείτε τα προϊόντα μας
+                </a>
+            </p>
+
         </section>
 
-        <hr>
+        <!-- Κατηγορίες -->
+        <section id="categories" aria-labelledby="categories-title">
 
-        <section id="products">
-            <h2>Δημοφιλή προϊόντα</h2>
+            <h2 id="categories-title">
+                Κατηγορίες προϊόντων
+            </h2>
 
-            <article>
-                <h3>Ασύρματα Ακουστικά</h3>
-                <img src="images/headphones.jpg" alt="Μαύρα ασύρματα ακουστικά" width="300" height="200">
-                <p>
-                    Ασύρματα ακουστικά με καθαρό ήχο και μεγάλη διάρκεια μπαταρίας.
-                </p>
-                <p><strong>Τιμή: 49,90 €</strong></p>
-                <button type="button">Προσθήκη στο καλάθι</button>
-            </article>
+            <ul>
+                <li>
+                    <a href="#audio">Ήχος</a>
+                </li>
 
-            <article>
-                <h3>Μηχανικό Πληκτρολόγιο</h3>
-                <img src="images/keyboard.jpg" alt="Μηχανικό πληκτρολόγιο υπολογιστή" width="300" height="200">
-                <p>
-                    Ανθεκτικό μηχανικό πληκτρολόγιο, κατάλληλο για εργασία και gaming.
-                </p>
-                <p><strong>Τιμή: 79,90 €</strong></p>
-                <button type="button">Προσθήκη στο καλάθι</button>
-            </article>
+                <li>
+                    <a href="#keyboards">Πληκτρολόγια</a>
+                </li>
 
-            <article>
-                <h3>Ασύρματο Ποντίκι</h3>
-                <img src="images/mouse.jpg" alt="Μαύρο ασύρματο ποντίκι" width="300" height="200">
-                <p>
-                    Ελαφρύ και εργονομικό ασύρματο ποντίκι για καθημερινή χρήση.
-                </p>
-                <p><strong>Τιμή: 29,90 €</strong></p>
-                <button type="button">Προσθήκη στο καλάθι</button>
-            </article>
+                <li>
+                    <a href="#mice">Ποντίκια</a>
+                </li>
 
-            <article>
-                <h3>Web Camera</h3>
-                <img src="images/webcam.jpg" alt="Web camera για υπολογιστή" width="300" height="200">
-                <p>
-                    Web camera υψηλής ανάλυσης για τηλεδιασκέψεις και online μαθήματα.
-                </p>
-                <p><strong>Τιμή: 59,90 €</strong></p>
-                <button type="button">Προσθήκη στο καλάθι</button>
-            </article>
+                <li>
+                    <a href="#cameras">Κάμερες</a>
+                </li>
+            </ul>
+
         </section>
 
-        <hr>
+        <!-- Προϊόντα -->
+        <section id="products" aria-labelledby="products-title">
 
-        <section id="cart">
-            <h2>Καλάθι αγορών</h2>
-            <p>Το καλάθι σας είναι προς το παρόν άδειο.</p>
-            <p>
-                Η λειτουργία του καλαθιού θα προστεθεί αργότερα με JavaScript.
-            </p>
+            <h2 id="products-title">
+                Δημοφιλή προϊόντα
+            </h2>
+
+            <!-- Προϊόν 1 -->
+            <article id="audio">
+
+                <header>
+                    <h3>
+                        <a href="products/headphones.html">
+                            Ασύρματα Ακουστικά
+                        </a>
+                    </h3>
+                </header>
+
+                <figure>
+                    <img src="images/headphones.jpg" alt="Μαύρα ασύρματα ακουστικά" width="300" height="200"
+                        loading="lazy">
+
+                    <figcaption>
+                        Ασύρματα ακουστικά σε μαύρο χρώμα
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Ασύρματα ακουστικά με καθαρό ήχο,
+                    εργονομικό σχεδιασμό και μεγάλη διάρκεια
+                    μπαταρίας.
+                </p>
+
+                <dl>
+                    <dt>Κωδικός προϊόντος</dt>
+                    <dd>TS-HP-001</dd>
+
+                    <dt>Συνδεσιμότητα</dt>
+                    <dd>Bluetooth 5.3</dd>
+
+                    <dt>Διάρκεια μπαταρίας</dt>
+                    <dd>Έως 20 ώρες</dd>
+
+                    <dt>Χρώμα</dt>
+                    <dd>Μαύρο</dd>
+
+                    <dt>Διαθεσιμότητα</dt>
+                    <dd>
+                        <data value="in-stock">
+                            Άμεσα διαθέσιμο
+                        </data>
+                    </dd>
+                </dl>
+
+                <p>
+                    <span>Αρχική τιμή:</span>
+                    <del>69,90 €</del>
+                </p>
+
+                <p>
+                    <strong>
+                        Τιμή προσφοράς:
+                        <data value="49.90">
+                            49,90 €
+                        </data>
+                    </strong>
+                </p>
+
+                <p>
+                    <a href="products/headphones.html">
+                        Προβολή προϊόντος
+                    </a>
+                </p>
+
+                <form action="/cart" method="post">
+
+                    <input type="hidden" name="product-id" value="TS-HP-001">
+
+                    <p>
+                        <label for="headphones-quantity">
+                            Ποσότητα:
+                        </label>
+
+                        <input type="number" id="headphones-quantity" name="quantity" min="1" max="10" value="1"
+                            required>
+                    </p>
+
+                    <button type="submit">
+                        Προσθήκη στο καλάθι
+                    </button>
+
+                </form>
+
+            </article>
+
+            <!-- Προϊόν 2 -->
+            <article id="keyboards">
+
+                <header>
+                    <h3>
+                        <a href="products/keyboard.html">
+                            Μηχανικό Πληκτρολόγιο
+                        </a>
+                    </h3>
+                </header>
+
+                <figure>
+                    <img src="images/keyboard.jpg" alt="Μηχανικό πληκτρολόγιο υπολογιστή" width="300" height="200"
+                        loading="lazy">
+
+                    <figcaption>
+                        Μηχανικό πληκτρολόγιο για εργασία και gaming
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Ανθεκτικό μηχανικό πληκτρολόγιο με φωτισμό,
+                    κατάλληλο για εργασία και gaming.
+                </p>
+
+                <dl>
+                    <dt>Κωδικός προϊόντος</dt>
+                    <dd>TS-KB-002</dd>
+
+                    <dt>Σύνδεση</dt>
+                    <dd>USB</dd>
+
+                    <dt>Τύπος</dt>
+                    <dd>Μηχανικό</dd>
+
+                    <dt>Φωτισμός</dt>
+                    <dd>RGB</dd>
+
+                    <dt>Διαθεσιμότητα</dt>
+                    <dd>
+                        <data value="in-stock">
+                            Άμεσα διαθέσιμο
+                        </data>
+                    </dd>
+                </dl>
+
+                <p>
+                    <strong>
+                        Τιμή:
+                        <data value="79.90">
+                            79,90 €
+                        </data>
+                    </strong>
+                </p>
+
+                <p>
+                    <a href="products/keyboard.html">
+                        Προβολή προϊόντος
+                    </a>
+                </p>
+
+                <form action="/cart" method="post">
+
+                    <input type="hidden" name="product-id" value="TS-KB-002">
+
+                    <p>
+                        <label for="keyboard-quantity">
+                            Ποσότητα:
+                        </label>
+
+                        <input type="number" id="keyboard-quantity" name="quantity" min="1" max="10" value="1" required>
+                    </p>
+
+                    <button type="submit">
+                        Προσθήκη στο καλάθι
+                    </button>
+
+                </form>
+
+            </article>
+
+            <!-- Προϊόν 3 -->
+            <article id="mice">
+
+                <header>
+                    <h3>
+                        <a href="products/mouse.html">
+                            Ασύρματο Ποντίκι
+                        </a>
+                    </h3>
+                </header>
+
+                <figure>
+                    <img src="images/mouse.jpg" alt="Μαύρο ασύρματο ποντίκι" width="300" height="200" loading="lazy">
+
+                    <figcaption>
+                        Εργονομικό ασύρματο ποντίκι
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Ελαφρύ και εργονομικό ασύρματο ποντίκι
+                    για καθημερινή χρήση.
+                </p>
+
+                <dl>
+                    <dt>Κωδικός προϊόντος</dt>
+                    <dd>TS-MS-003</dd>
+
+                    <dt>Συνδεσιμότητα</dt>
+                    <dd>Ασύρματος δέκτης USB</dd>
+
+                    <dt>Ανάλυση</dt>
+                    <dd>1600 DPI</dd>
+
+                    <dt>Χρώμα</dt>
+                    <dd>Μαύρο</dd>
+
+                    <dt>Διαθεσιμότητα</dt>
+                    <dd>
+                        <data value="low-stock">
+                            Περιορισμένο απόθεμα
+                        </data>
+                    </dd>
+                </dl>
+
+                <p>
+                    <strong>
+                        Τιμή:
+                        <data value="29.90">
+                            29,90 €
+                        </data>
+                    </strong>
+                </p>
+
+                <p>
+                    <a href="products/mouse.html">
+                        Προβολή προϊόντος
+                    </a>
+                </p>
+
+                <form action="/cart" method="post">
+
+                    <input type="hidden" name="product-id" value="TS-MS-003">
+
+                    <p>
+                        <label for="mouse-quantity">
+                            Ποσότητα:
+                        </label>
+
+                        <input type="number" id="mouse-quantity" name="quantity" min="1" max="5" value="1" required>
+                    </p>
+
+                    <button type="submit">
+                        Προσθήκη στο καλάθι
+                    </button>
+
+                </form>
+
+            </article>
+
+            <!-- Προϊόν 4 -->
+            <article id="cameras">
+
+                <header>
+                    <h3>
+                        <a href="products/webcam.html">
+                            Web Camera
+                        </a>
+                    </h3>
+                </header>
+
+                <figure>
+                    <img src="images/webcam.jpg" alt="Web camera για υπολογιστή" width="300" height="200"
+                        loading="lazy">
+
+                    <figcaption>
+                        Web camera υψηλής ανάλυσης
+                    </figcaption>
+                </figure>
+
+                <p>
+                    Web camera υψηλής ανάλυσης για
+                    τηλεδιασκέψεις και online μαθήματα.
+                </p>
+
+                <dl>
+                    <dt>Κωδικός προϊόντος</dt>
+                    <dd>TS-WC-004</dd>
+
+                    <dt>Ανάλυση</dt>
+                    <dd>Full HD 1080p</dd>
+
+                    <dt>Μικρόφωνο</dt>
+                    <dd>Ενσωματωμένο</dd>
+
+                    <dt>Σύνδεση</dt>
+                    <dd>USB</dd>
+
+                    <dt>Διαθεσιμότητα</dt>
+                    <dd>
+                        <data value="in-stock">
+                            Άμεσα διαθέσιμο
+                        </data>
+                    </dd>
+                </dl>
+
+                <p>
+                    <strong>
+                        Τιμή:
+                        <data value="59.90">
+                            59,90 €
+                        </data>
+                    </strong>
+                </p>
+
+                <p>
+                    <a href="products/webcam.html">
+                        Προβολή προϊόντος
+                    </a>
+                </p>
+
+                <form action="/cart" method="post">
+
+                    <input type="hidden" name="product-id" value="TS-WC-004">
+
+                    <p>
+                        <label for="webcam-quantity">
+                            Ποσότητα:
+                        </label>
+
+                        <input type="number" id="webcam-quantity" name="quantity" min="1" max="10" value="1" required>
+                    </p>
+
+                    <button type="submit">
+                        Προσθήκη στο καλάθι
+                    </button>
+
+                </form>
+
+            </article>
+
         </section>
 
-        <hr>
+        <!-- Καλάθι -->
+        <section id="cart" aria-labelledby="cart-title">
 
-        <section id="about">
-            <h2>Σχετικά με εμάς</h2>
+            <h2 id="cart-title">
+                Καλάθι αγορών
+            </h2>
+
             <p>
-                Το TechStore είναι ένα εκπαιδευτικό ηλεκτρονικό κατάστημα που
-                δημιουργήθηκε ως προσωπικό project για portfolio.
+                Το παρακάτω καλάθι περιέχει ένα ενδεικτικό προϊόν.
+                Η πραγματική λειτουργία του θα προστεθεί αργότερα
+                με JavaScript και backend.
             </p>
+
+            <table>
+
+                <caption>
+                    Προϊόντα στο καλάθι σας
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Προϊόν</th>
+                        <th scope="col">Ποσότητα</th>
+                        <th scope="col">Τιμή μονάδας</th>
+                        <th scope="col">Σύνολο</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Ασύρματα Ακουστικά</td>
+                        <td>1</td>
+                        <td>49,90 €</td>
+                        <td>49,90 €</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="3">
+                            Συνολικό ποσό
+                        </th>
+
+                        <td>
+                            <strong>49,90 €</strong>
+                        </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
             <p>
-                Στόχος του project είναι να επεκταθεί σταδιακά με CSS και JavaScript.
+                <a href="#checkout">
+                    Μετάβαση στην ολοκλήρωση παραγγελίας
+                </a>
             </p>
+
         </section>
 
-        <hr>
+        <!-- Checkout -->
+        <section id="checkout" aria-labelledby="checkout-title">
 
-        <section id="contact">
-            <h2>Επικοινωνία</h2>
+            <h2 id="checkout-title">
+                Ολοκλήρωση παραγγελίας
+            </h2>
 
-            <form action="#" method="post">
+            <form action="/checkout" method="post">
+
+                <fieldset>
+
+                    <legend>
+                        Στοιχεία πελάτη
+                    </legend>
+
+                    <p>
+                        <label for="customer-name">
+                            Ονοματεπώνυμο:
+                        </label>
+
+                        <input type="text" id="customer-name" name="customer-name" autocomplete="name" required>
+                    </p>
+
+                    <p>
+                        <label for="customer-email">
+                            Email:
+                        </label>
+
+                        <input type="email" id="customer-email" name="customer-email" autocomplete="email" required>
+                    </p>
+
+                    <p>
+                        <label for="customer-phone">
+                            Τηλέφωνο:
+                        </label>
+
+                        <input type="tel" id="customer-phone" name="customer-phone" autocomplete="tel" required>
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>
+                        Διεύθυνση αποστολής
+                    </legend>
+
+                    <p>
+                        <label for="address">
+                            Διεύθυνση:
+                        </label>
+
+                        <input type="text" id="address" name="address" autocomplete="street-address" required>
+                    </p>
+
+                    <p>
+                        <label for="city">
+                            Πόλη:
+                        </label>
+
+                        <input type="text" id="city" name="city" autocomplete="address-level2" required>
+                    </p>
+
+                    <p>
+                        <label for="postal-code">
+                            Ταχυδρομικός κώδικας:
+                        </label>
+
+                        <input type="text" id="postal-code" name="postal-code" autocomplete="postal-code"
+                            inputmode="numeric" pattern="[0-9]{5}" placeholder="12345" required>
+                    </p>
+
+                    <p>
+                        <label for="country">
+                            Χώρα:
+                        </label>
+
+                        <select id="country" name="country" autocomplete="country-name" required>
+                            <option value="">
+                                Επιλέξτε χώρα
+                            </option>
+
+                            <option value="GR">
+                                Ελλάδα
+                            </option>
+
+                            <option value="CY">
+                                Κύπρος
+                            </option>
+                        </select>
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>
+                        Τρόπος αποστολής
+                    </legend>
+
+                    <p>
+                        <input type="radio" id="standard-shipping" name="shipping" value="standard" checked>
+
+                        <label for="standard-shipping">
+                            Κανονική αποστολή — 3 έως 5 εργάσιμες ημέρες
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="express-shipping" name="shipping" value="express">
+
+                        <label for="express-shipping">
+                            Express αποστολή — 1 έως 2 εργάσιμες ημέρες
+                        </label>
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>
+                        Τρόπος πληρωμής
+                    </legend>
+
+                    <p>
+                        <input type="radio" id="payment-card" name="payment-method" value="card" checked>
+
+                        <label for="payment-card">
+                            Πιστωτική ή χρεωστική κάρτα
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="payment-bank" name="payment-method" value="bank">
+
+                        <label for="payment-bank">
+                            Τραπεζική κατάθεση
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="payment-cash" name="payment-method" value="cash-on-delivery">
+
+                        <label for="payment-cash">
+                            Αντικαταβολή
+                        </label>
+                    </p>
+
+                </fieldset>
+
                 <p>
-                    <label for="name">Ονοματεπώνυμο:</label><br>
-                    <input type="text" id="name" name="name" required>
+                    <input type="checkbox" id="terms" name="terms" required>
+
+                    <label for="terms">
+                        Αποδέχομαι τους
+                        <a href="terms.html">
+                            όρους χρήσης
+                        </a>
+                        και την
+                        <a href="privacy.html">
+                            πολιτική απορρήτου
+                        </a>.
+                    </label>
                 </p>
 
-                <p>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required>
-                </p>
+                <button type="submit">
+                    Ολοκλήρωση παραγγελίας
+                </button>
 
-                <p>
-                    <label for="subject">Θέμα:</label><br>
-                    <input type="text" id="subject" name="subject" required>
-                </p>
-
-                <p>
-                    <label for="message">Μήνυμα:</label><br>
-                    <textarea id="message" name="message" rows="6" cols="40" required></textarea>
-                </p>
-
-                <button type="submit">Αποστολή μηνύματος</button>
             </form>
+
+        </section>
+
+        <!-- Σχετικά -->
+        <section id="about" aria-labelledby="about-title">
+
+            <h2 id="about-title">
+                Σχετικά με εμάς
+            </h2>
+
+            <p>
+                Το TechStore είναι ένα εκπαιδευτικό
+                ηλεκτρονικό κατάστημα που δημιουργήθηκε
+                ως προσωπικό project για portfolio.
+            </p>
+
+            <p>
+                Στόχος του project είναι να επεκταθεί σταδιακά
+                με CSS, JavaScript και τεχνολογίες backend.
+            </p>
+
+            <p>
+                Το project δίνει έμφαση στη σωστή σημασιολογική
+                δομή της HTML, στην προσβασιμότητα και στη
+                δημιουργία εύχρηστων φορμών.
+            </p>
+
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" aria-labelledby="faq-title">
+
+            <h2 id="faq-title">
+                Συχνές ερωτήσεις
+            </h2>
+
+            <details>
+                <summary>
+                    Πόσο χρόνο χρειάζεται η αποστολή;
+                </summary>
+
+                <p>
+                    Η κανονική αποστολή ολοκληρώνεται συνήθως
+                    σε 3 έως 5 εργάσιμες ημέρες.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    Υπάρχει δυνατότητα express αποστολής;
+                </summary>
+
+                <p>
+                    Ναι. Η express αποστολή ολοκληρώνεται
+                    συνήθως σε 1 έως 2 εργάσιμες ημέρες.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    Μπορώ να επιστρέψω ένα προϊόν;
+                </summary>
+
+                <p>
+                    Ναι. Μπορείτε να επιστρέψετε ένα προϊόν
+                    σύμφωνα με τους όρους της πολιτικής επιστροφών.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    Ποιοι τρόποι πληρωμής υποστηρίζονται;
+                </summary>
+
+                <p>
+                    Υποστηρίζονται πληρωμή με κάρτα,
+                    τραπεζική κατάθεση και αντικαταβολή.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    Πώς μπορώ να επικοινωνήσω με το κατάστημα;
+                </summary>
+
+                <p>
+                    Μπορείτε να χρησιμοποιήσετε τη φόρμα
+                    επικοινωνίας, να στείλετε email ή να
+                    επικοινωνήσετε τηλεφωνικά.
+                </p>
+            </details>
+
+        </section>
+
+        <!-- Στοιχεία επικοινωνίας -->
+        <section id="contact-info" aria-labelledby="contact-info-title">
+
+            <h2 id="contact-info-title">
+                Στοιχεία επικοινωνίας
+            </h2>
+
+            <address>
+                <p>
+                    <strong>TechStore</strong>
+                </p>
+
+                <p>
+                    Λεωφόρος Τεχνολογίας 10<br>
+                    Αθήνα, 12345<br>
+                    Ελλάδα
+                </p>
+
+                <p>
+                    Email:
+                    <a href="mailto:info@techstore.example">
+                        info@techstore.example
+                    </a>
+                </p>
+
+                <p>
+                    Τηλέφωνο:
+                    <a href="tel:+302101234567">
+                        210 123 4567
+                    </a>
+                </p>
+            </address>
+
+            <h3>Ωράριο εξυπηρέτησης</h3>
+
+            <p>
+                Δευτέρα έως Παρασκευή:
+                <time datetime="09:00">09:00</time>
+                –
+                <time datetime="17:00">17:00</time>
+            </p>
+
+            <p>
+                Σάββατο:
+                <time datetime="10:00">10:00</time>
+                –
+                <time datetime="14:00">14:00</time>
+            </p>
+
+            <p>
+                Κυριακή: Κλειστά
+            </p>
+
+        </section>
+
+        <!-- Φόρμα επικοινωνίας -->
+        <section id="contact" aria-labelledby="contact-title">
+
+            <h2 id="contact-title">
+                Επικοινωνία
+            </h2>
+
+            <p>
+                Συμπληρώστε την παρακάτω φόρμα και θα
+                επικοινωνήσουμε μαζί σας το συντομότερο δυνατό.
+            </p>
+
+            <form action="/contact" method="post">
+
+                <p>
+                    <label for="name">
+                        Ονοματεπώνυμο:
+                    </label>
+                    <br>
+
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                </p>
+
+                <p>
+                    <label for="email">
+                        Email:
+                    </label>
+                    <br>
+
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </p>
+
+                <p>
+                    <label for="phone">
+                        Τηλέφωνο:
+                    </label>
+                    <br>
+
+                    <input type="tel" id="phone" name="phone" autocomplete="tel">
+                </p>
+
+                <p>
+                    <label for="subject">
+                        Θέμα:
+                    </label>
+                    <br>
+
+                    <select id="subject" name="subject" required>
+                        <option value="">
+                            Επιλέξτε θέμα
+                        </option>
+
+                        <option value="product">
+                            Ερώτηση για προϊόν
+                        </option>
+
+                        <option value="order">
+                            Ερώτηση για παραγγελία
+                        </option>
+
+                        <option value="returns">
+                            Επιστροφές προϊόντων
+                        </option>
+
+                        <option value="support">
+                            Τεχνική υποστήριξη
+                        </option>
+
+                        <option value="other">
+                            Άλλο
+                        </option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="order-number">
+                        Αριθμός παραγγελίας:
+                    </label>
+                    <br>
+
+                    <input type="text" id="order-number" name="order-number" placeholder="Προαιρετικό">
+                </p>
+
+                <p>
+                    <label for="message">
+                        Μήνυμα:
+                    </label>
+                    <br>
+
+                    <textarea id="message" name="message" rows="6" cols="40" minlength="10" maxlength="1000"
+                        required></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="privacy" name="privacy" required>
+
+                    <label for="privacy">
+                        Συμφωνώ με την
+                        <a href="privacy.html">
+                            πολιτική απορρήτου
+                        </a>.
+                    </label>
+                </p>
+
+                <button type="submit">
+                    Αποστολή μηνύματος
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Newsletter -->
+        <section id="newsletter" aria-labelledby="newsletter-title">
+
+            <h2 id="newsletter-title">
+                Εγγραφή στο newsletter
+            </h2>
+
+            <p>
+                Λάβετε νέα, προσφορές και ενημερώσεις
+                για τα προϊόντα μας.
+            </p>
+
+            <form action="/newsletter" method="post">
+
+                <p>
+                    <label for="newsletter-email">
+                        Email:
+                    </label>
+
+                    <input type="email" id="newsletter-email" name="email" autocomplete="email" required>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="newsletter-consent" name="newsletter-consent" required>
+
+                    <label for="newsletter-consent">
+                        Συμφωνώ να λαμβάνω ενημερωτικά email.
+                    </label>
+                </p>
+
+                <button type="submit">
+                    Εγγραφή
+                </button>
+
+            </form>
+
         </section>
 
     </main>
 
     <footer>
-        <hr>
-        <p>&copy; 2026 TechStore. Όλα τα δικαιώματα διατηρούνται.</p>
-        <p><a href="#home">Επιστροφή στην αρχή</a></p>
+
+        <!-- Πλοήγηση footer -->
+        <nav aria-label="Πλοήγηση υποσέλιδου">
+            <ul>
+                <li>
+                    <a href="#about">
+                        Σχετικά με εμάς
+                    </a>
+                </li>
+
+                <li>
+                    <a href="shipping.html">
+                        Τρόποι αποστολής
+                    </a>
+                </li>
+
+                <li>
+                    <a href="returns.html">
+                        Πολιτική επιστροφών
+                    </a>
+                </li>
+
+                <li>
+                    <a href="privacy.html">
+                        Πολιτική απορρήτου
+                    </a>
+                </li>
+
+                <li>
+                    <a href="terms.html">
+                        Όροι χρήσης
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        Επικοινωνία
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <p>
+            &copy;
+            <time datetime="2026">2026</time>
+            TechStore. Όλα τα δικαιώματα διατηρούνται.
+        </p>
+
+        <p>
+            Το TechStore αποτελεί εκπαιδευτικό project
+            και δεν πραγματοποιεί πραγματικές πωλήσεις.
+        </p>
+
+        <p>
+            <a href="#home">
+                Επιστροφή στην αρχή
+            </a>
+        </p>
+
     </footer>
 
 </body>
