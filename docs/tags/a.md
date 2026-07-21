@@ -26,96 +26,90 @@
 |`_blank`|Ανοίγει τον σύνδεσμο σε **νέα καρτέλα** ή νέο παράθυρο του browser.|
 |`_self`|Ανοίγει τον σύνδεσμο στην **τρέχουσα καρτέλα**. Είναι η προεπιλεγμένη συμπεριφορά.|
 
-## Παράδειγμα 1
+## Παράδειγμα `target="_blank"`
+
+Το παρακάτω παράδειγμα δημιουργεί έναν σύνδεσμο προς το YouTube, ο οποίος ανοίγει σε **νέα καρτέλα** του browser χάρη στην τιμή `target="_blank"`.
 
 ```html
-<a href="https://example.com">Link</a>
+<a href="https://youtube.com" target="_blank">Link</a>
 ```
 
-## Παράδειγμα 2
+## Παράδειγμα `target="_self"`
 
-Πώς να χρησιμοποιήσετε μια εικόνα ως σύνδεσμο.
+Το παρακάτω παράδειγμα δημιουργεί έναν σύνδεσμο προς το YouTube, ο οποίος ανοίγει στην **τρέχουσα καρτέλα** του browser. Η τιμή `target="_self"` είναι η προεπιλεγμένη συμπεριφορά.
 
 ```html
-<a href="https://example.com"><img src="#"></a>
+<a href="https://youtube.com" target="_self">Link</a>
 ```
 
-## Παράδειγμα 3
+## Browser Support
 
-Πώς να χρησιμοποιήσετε ένα βίντεο ως σύνδεσμο.
+Το tag `<a>` υποστηρίζεται από όλους τους σύγχρονους browsers.
+
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- Safari
+- Opera
+
+## Σύνδεσμος με προεπιλεγμένη συμπεριφορά
+
+Το παρακάτω παράδειγμα δημιουργεί έναν σύνδεσμο προς το YouTube. Εφόσον δεν έχει οριστεί το attribute `target`, ο σύνδεσμος ανοίγει στην **τρέχουσα καρτέλα** του browser.
 
 ```html
-<a href="https://example.com">
+<a href="https://youtube.com">Youtube</a>
+```
+
+## Χρήση εικόνας ως σύνδεσμος
+
+Το παρακάτω παράδειγμα δείχνει πώς μια **εικόνα** μπορεί να χρησιμοποιηθεί ως σύνδεσμος. Όταν ο χρήστης κάνει κλικ στην εικόνα, μεταφέρεται στη διεύθυνση που ορίζεται στο attribute `href` του στοιχείου `<a>`.
+
+```html
+<a href="https://youtube.com"><img src="images/youtube.png" width="25"></a>
+```
+
+## Χρήση βίντεο ως σύνδεσμος
+
+Το παρακάτω παράδειγμα δείχνει πώς ένα στοιχείο `<video>` μπορεί να χρησιμοποιηθεί ως σύνδεσμος. Όταν ο χρήστης κάνει κλικ στο βίντεο, μεταφέρεται στη διεύθυνση που ορίζεται στο attribute `href` του στοιχείου `<a>`.
+
+```html
+<a href="https://youtube.com">
   <video autoplay muted loop width="400">
-    <source src="video.mp4" type="video/mp4">
+    <source src="videos/sample.mp4" type="video/mp4">
     Ο browser σας δεν υποστηρίζει το στοιχείο video.
   </video>
 </a>
 ```
 
-## Παράδειγμα 4
+## Χρήση κουμπιού ως σύνδεσμος
 
-Πώς να χρησιμοποιήσετε ένα κουμπί ως σύνδεσμο.
+Το παρακάτω παράδειγμα δείχνει πώς ένα κουμπί μπορεί να τοποθετηθεί μέσα σε ένα στοιχείο `<a>`, ώστε να λειτουργεί ως σύνδεσμος. Όταν ο χρήστης πατήσει το κουμπί, μεταφέρεται στη διεύθυνση που ορίζεται στο attribute `href`.
 
 ```html
-<a href="https://example.com">
-    <button type="button">
-        Μετάβαση στον ιστότοπο
-    </button>
+<a href="https://youtube.com">
+    <button type="button">Μετάβαση στον ιστότοπο</button>
 </a>
 ```
 
-Όταν ο χρήστης πατήσει το κουμπί, μεταφέρεται στη διεύθυνση που ορίζεται στο attribute `href` του στοιχείου `<a>`.
+## Δημιουργία συνδέσμου email
 
-## Παράδειγμα 5
-
-Πώς να ανοίξετε έναν σύνδεσμο σε νέα καρτέλα ή νέο παράθυρο.
-
-```html
-<a href="#" target="_blank">Link</a>
-```
-
-## Παράδειγμα 6
-
-Πώς να δημιουργήσετε σύνδεσμο προς μια διεύθυνση email.
+Το παρακάτω παράδειγμα χρησιμοποιεί το πρωτόκολλο `mailto:` για τη δημιουργία ενός συνδέσμου email. Όταν ο χρήστης κάνει κλικ στον σύνδεσμο, ανοίγει η προεπιλεγμένη εφαρμογή ηλεκτρονικού ταχυδρομείου με προσυμπληρωμένη τη διεύθυνση του παραλήπτη.
 
 ```html
 <a href="mailto:someone@example.com">Αποστολή email</a>
 ```
 
-## Παράδειγμα 7
+## Δημιουργία τηλεφωνικού συνδέσμου
 
-Πώς να δημιουργήσετε σύνδεσμο προς έναν αριθμό τηλεφώνου.
+Το παρακάτω παράδειγμα χρησιμοποιεί το πρωτόκολλο `tel:` για τη δημιουργία ενός τηλεφωνικού συνδέσμου. Σε συσκευές που υποστηρίζουν τηλεφωνικές κλήσεις, το πάτημα του συνδέσμου ξεκινά τη διαδικασία πραγματοποίησης κλήσης.
 
 ```html
 <a href="tel:+4733378901">+47 333 78 901</a>
 ```
 
-## Παράδειγμα 8
+## Σύνδεσμος επιστροφής στην κορυφή της σελίδας
 
-Πώς να δημιουργήσετε σύνδεσμο προς άλλο σημείο της ίδιας σελίδας.
-
-```html
-<!DOCTYPE html>
-<html lang="el">
-  <head>
-    <title>Τίτλος του Εγγράφου</title>
-  </head>
-  <body>
-    <a href="#section2">Μετάβαση στην Ενότητα 2</a>
-
-    <h2 id="section1">Ενότητα 1</h2>
-    <p>Lorem ipsum dolor sit amet...</p>
-    
-    <h2 id="section2">Ενότητα 2</h2>
-    <p>Lorem ipsum dolor sit amet...</p>
-  </body>
-</html>
-```
-
-## Παράδειγμα 9
-
-Πώς να δημιουργήσετε σύνδεσμο προς άλλο αρχείο.
+Το παρακάτω παράδειγμα δημιουργεί έναν **εσωτερικό σύνδεσμο (anchor link)**, ο οποίος επιστρέφει τον χρήστη στην κορυφή της ιστοσελίδας. Η τιμή `#top` του attribute `href` αντιστοιχεί στο στοιχείο που έχει `id="top"`.
 
 ```html
 <!DOCTYPE html>
@@ -124,7 +118,119 @@
     <title>Τίτλος του Εγγράφου</title>
   </head>
   <body>
-    <a href="../docs/index.html">Αρχειοθέτηση HTML</a>
+    <h1 id="top">HTML Tutorial</h1>
+
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+
+    <a href="#top">Back to Top</a>
   </body>
 </html>
 ```
+
+## Σύνδεσμος με σχετική διαδρομή (Relative URL)
+
+Το παρακάτω παράδειγμα δημιουργεί έναν σύνδεσμο προς τη σελίδα `contact.html`, η οποία βρίσκεται μέσα στον φάκελο `pages`. Η διαδρομή `../pages/contact.html` χρησιμοποιεί το `../` για να μεταβεί έναν φάκελο πίσω από τη θέση του αρχείου `Blog` και στη συνέχεια να ανοίξει τη σελίδα `contact.html`.
+
+```html
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <title>Blog</title>
+  </head>
+  <body>
+    <a href="../pages/contact.html">Επικοινωνία</a>
+  </body>
+</html>
+```
+
+## Σύνδεσμος με διαδρομή από τη ρίζα του ιστότοπου (Root-relative URL)
+
+Το παρακάτω παράδειγμα δημιουργεί έναν σύνδεσμο προς τη σελίδα `contact.html`, η οποία βρίσκεται μέσα στον φάκελο `pages`. Επειδή η διαδρομή ξεκινά με `/`, ο browser αναζητά το αρχείο **ξεκινώντας από τη ρίζα (root) του ιστότοπου**, ανεξάρτητα από τον φάκελο στον οποίο βρίσκεται η τρέχουσα ιστοσελίδα.
+
+```html
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <title>Blog</title>
+  </head>
+  <body>
+    <a href="/pages/contact.html">Contact</a>
+  </body>
+</html>
+```
+
+## Εκτέλεση κώδικα JavaScript μέσω συνδέσμου
+
+Το παρακάτω παράδειγμα χρησιμοποιεί το πρωτόκολλο `javascript:` στο attribute `href` για την εκτέλεση κώδικα JavaScript όταν ο χρήστης κάνει κλικ στον σύνδεσμο. Στην περίπτωση αυτή, εμφανίζεται ένα παράθυρο ειδοποίησης (alert) με το μήνυμα **"Hello World!"**.
+
+```html
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <title>Blog</title>
+  </head>
+  <body>
+    <a href="javascript:alert('Hello World!');">Execute JavaScript</a>
+  </body>
+</html>
+```
+
+> **Σημείωση:** Η χρήση του `javascript:` στο `href` θεωρείται πλέον κακή πρακτική και θα πρέπει να αποφεύγεται. Για την εκτέλεση κώδικα JavaScript προτιμάται η χρήση του attribute `onclick` ή η προσθήκη event listeners μέσω JavaScript.
+
+### Χρήση του `onclick`
+
+Ορίζεις μια συνάρτηση JavaScript και την καλείς από το attribute `onclick`.
+
+```html id="f8z6yc"
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>onclick Example</title>
+</head>
+<body>
+  <a href="#" onclick="showMessage(); return false;">Execute JavaScript</a>
+  <script>
+    function showMessage() {
+      alert("Hello World!");
+    }
+  </script>
+</body>
+</html>
+```
+
+Στο παραπάνω παράδειγμα, όταν ο χρήστης κάνει κλικ στον σύνδεσμο, εκτελείται η συνάρτηση `showMessage()`, η οποία εμφανίζει το μήνυμα **"Hello World!"**. Η έκφραση `return false;` αποτρέπει την προεπιλεγμένη λειτουργία του συνδέσμου, ώστε ο browser να μη μεταβεί στη διεύθυνση `#`.
+
+> **Σημείωση:** Η χρήση του `onclick` είναι προτιμότερη από το `javascript:` στο attribute `href`, καθώς διαχωρίζει τη διεύθυνση του συνδέσμου από τον κώδικα JavaScript. Ωστόσο, εξακολουθεί να αναμιγνύει HTML και JavaScript. Για τον λόγο αυτό, στις σύγχρονες εφαρμογές προτιμάται η παρακάτω μέθοδος `addEventListener()`, η οποία διατηρεί τον κώδικα πιο οργανωμένο και ευκολότερο στη συντήρηση.
+
+### Χρήση `addEventListener()`
+
+Ο κώδικας JavaScript βρίσκεται ξεχωριστά από την HTML.
+
+```html id="p4v8gx"
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>addEventListener Example</title>
+</head>
+<body>
+  <a href="#" id="myLink">Execute JavaScript</a>
+  <script>
+    const link = document.getElementById("myLink");
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      alert("Hello World!");
+    });
+  </script>
+</body>
+</html>
+```
+
+Στο παραπάνω παράδειγμα, η μέθοδος `addEventListener()` προσθέτει έναν **event listener** στο στοιχείο `<a>`, ώστε να εκτελείται ο κώδικας JavaScript κάθε φορά που ο χρήστης κάνει κλικ στον σύνδεσμο. Η μέθοδος `event.preventDefault()` ακυρώνει την προεπιλεγμένη λειτουργία του συνδέσμου, ενώ η `alert()` εμφανίζει το μήνυμα **"Hello World!"**.
+
+> **Σημείωση:** Η χρήση της `addEventListener()` αποτελεί την **προτιμότερη και σύγχρονη πρακτική**, καθώς διαχωρίζει τον κώδικα JavaScript από την HTML, βελτιώνει την οργάνωση του κώδικα και διευκολύνει τη συντήρηση και την επαναχρησιμοποίησή του.

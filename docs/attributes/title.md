@@ -6,12 +6,6 @@
 
 Το `title` ανήκει στα **Global Attributes**, επομένως μπορεί να χρησιμοποιηθεί σχεδόν σε **οποιοδήποτε HTML στοιχείο**.
 
-## Σύνταξη
-
-```html
-<tag title="Πρόσθετες πληροφορίες">
-```
-
 Παράδειγμα:
 
 ```html
@@ -27,27 +21,19 @@
 ```html
 <!DOCTYPE html>
 <html lang="el">
-
-<head>
-  <title>Το attribute title</title>
-</head>
-
-<body>
-
-  <p>
-    Ο οργανισμός
-    <abbr title="World Health Organization">
-      WHO
-    </abbr>
-    ιδρύθηκε το 1948.
-  </p>
-
-  <p title="Δωρεάν μαθήματα για Web Development">
-    W3Schools.com
-  </p>
-
-</body>
-
+  <head>
+    <title>Το attribute title</title>
+  </head>
+  <body>
+    <p>
+      Ο οργανισμός
+      <abbr title="World Health Organization">
+        WHO
+      </abbr>
+      ιδρύθηκε το 1948.
+    </p>
+    <p title="Δωρεάν μαθήματα για Web Development">W3Schools.com</p>
+  </body>
 </html>
 ```
 
@@ -63,9 +49,7 @@
 ### Επεξήγηση συντομογραφιών
 
 ```html
-<abbr title="HyperText Markup Language">
-  HTML
-</abbr>
+<abbr title="HyperText Markup Language">HTML</abbr>
 ```
 
 ---
@@ -73,9 +57,7 @@
 ### Πρόσθετη πληροφορία
 
 ```html
-<p title="Η αγαπημένη μου γλώσσα προγραμματισμού">
-  JavaScript
-</p>
+<p title="Η αγαπημένη μου γλώσσα προγραμματισμού">JavaScript</p>
 ```
 
 ---
@@ -83,11 +65,7 @@
 ### Tooltip σε εικόνα
 
 ```html
-<img
-  src="logo.png"
-  alt="Logo"
-  title="Το λογότυπο της εταιρείας"
->
+<img src="logo.png" alt="Logo" title="Το λογότυπο της εταιρείας">
 ```
 
 ---
